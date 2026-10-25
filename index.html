@@ -40,33 +40,33 @@ footer{color:var(--gray);font-size:12px;margin:18px 0}
 <button id="exp">Export my progress</button><button id="imp">Import</button><input type="file" id="file" accept=".json" hidden>
 </div>
 <table><thead><tr>
-<th data-k="date_found">Date found ▾</th><th data-k="company">Company</th><th data-k="role">Role</th><th data-k="location" class="hide-sm">Location</th><th data-k="salary" class="hide-sm">Salary</th><th data-k="fit">Fit</th><th data-k="status">Status</th>
+<th data-k="date_found">Date found ▾</th><th data-k="posted" class="hide-sm">Posted</th><th data-k="company">Company</th><th data-k="role">Role</th><th data-k="location" class="hide-sm">Location</th><th data-k="salary" class="hide-sm">Salary</th><th data-k="fit">Fit</th><th data-k="status">Status</th>
 </tr></thead><tbody id="tb"></tbody></table>
 <footer>Each day's picks are added to <code>jobs.json</code>. Progress is stored in this browser's localStorage. Use Export to back it up or move it to another device.</footer>
 </div>
 <script>
 const STATUSES=["Not applied","Applied","Interviewing","Offer","Rejected","Not interested"];
 const KEY="adeline-tracker-v1";let jobs=[],st=JSON.parse(localStorage.getItem(KEY)||"{}"),sortK="date_found",asc=false,open=null;
-const save=()=>localStorage.setItem(KEY,JSON.stringify(st));const S=id=>st[id]||(st[id]={status:"Not applied",notes:""});
+const save=()=>localStorage.setItem(KEY,JSON.stringify(st));let DEF={};const S=id=>st[id]||(st[id]={status:DEF[id]||"Not applied",notes:""});
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fitc=f=>f>=8?"f-hi":f>=6?"f-md":"f-lo";
-fetch("jobs.json?"+Date.now()).then(r=>r.json()).then(d=>{jobs=d.jobs;
+fetch("jobs.json?"+Date.now()).then(r=>r.json()).then(d=>{jobs=d.jobs;jobs.forEach(j=>{if(j.default_status)DEF[j.id]=j.default_status});
  STATUSES.forEach(s=>fstatus.add(new Option(s,s)));[...new Set(jobs.map(j=>j.category))].forEach(c=>fcat.add(new Option(c,c)));render();});
 function card(c){const li=c.linkedin&&c.linkedin!=="unknown"?`<a href="${esc(c.linkedin)}" target="_blank">LinkedIn ↗</a>`:"LinkedIn: unknown";
  const em=c.email&&!c.email.startsWith("unknown")?`<a href="mailto:${esc(c.email.split(" ")[0])}">${esc(c.email)}</a>`:"Email: unknown";
  return `<div class="card"><h4>${esc(c.name)}${c.georgetown_alum?'<span class="alum">Georgetown alum</span>':''}</h4><div class="t">${esc(c.title)}</div>${li}<br>${em}${c.note?`<div class="n">${esc(c.note)}</div>`:""}</div>`}
 function render(){const q=document.getElementById("q").value.toLowerCase(),fs=fstatus.value,fc=fcat.value,fm=+fmin.value;
- let L=jobs.filter(j=>(!q||[j.company,j.role,j.location].join(" ").toLowerCase().includes(q))&&(!fs||S(j.id).status===fs)&&(!fc||j.category===fc)&&j.fit>=fm);
+ let L=jobs.filter(j=>(!q||[j.company,j.role,j.location].join(" ").toLowerCase().includes(q))&&(!fs||S(j.id).status===fs)&&(!fc||j.category===fc)&&(fm===0||(j.fit||0)>=fm));
  L.sort((a,b)=>{let x=sortK==="status"?S(a.id).status:a[sortK],y=sortK==="status"?S(b.id).status:b[sortK];let r=x>y?1:x<y?-1:0;if(!r&&sortK==="date_found")r=b.fit-a.fit;return asc?r:-r});
- let h="",last=null;
- for(const j of L){if(sortK==="date_found"&&j.date_found!==last){last=j.date_found;h+=`<tr class="group"><td colspan="7">${new Date(last+"T12:00").toDateString()}</td></tr>`}
-  const s=S(j.id);h+=`<tr class="row" data-id="${j.id}"><td>${j.date_found}</td><td><b>${esc(j.company)}</b></td><td>${esc(j.role)}</td><td class="hide-sm">${esc(j.location)}</td><td class="hide-sm">${esc(j.salary)}</td><td><span class="fit ${fitc(j.fit)}">${j.fit}/10</span></td>
+ let h="",last=null;if(sortK==="date_found")L=[...L.filter(j=>j.section!=="applied"),...L.filter(j=>j.section==="applied")];
+ for(const j of L){if(sortK==="date_found"&&j.date_found!==last){last=j.date_found;h+=`<tr class="group"><td colspan="8">${last==="pre-tracker"?"Already applied (before the tracker)":"Picks found "+new Date(last+"T12:00").toDateString()}</td></tr>`}
+  const s=S(j.id);h+=`<tr class="row" data-id="${j.id}"><td>${j.date_found}</td><td class="hide-sm">${esc(j.posted||"")}</td><td><b>${esc(j.company)}</b></td><td>${esc(j.role)}</td><td class="hide-sm">${esc(j.location)}</td><td class="hide-sm">${esc(j.salary)}</td><td>${j.fit?`<span class="fit ${fitc(j.fit)}">${j.fit}/10</span>`:"—"}</td>
   <td><select class="status" data-id="${j.id}">${STATUSES.map(x=>`<option ${x===s.status?"selected":""}>${x}</option>`).join("")}</select></td></tr>`;
-  if(open===j.id)h+=`<tr class="detail"><td colspan="7"><div class="grid"><div><h3>Role summary</h3><p>${esc(j.summary)}</p><h3>Fit: ${j.fit}/10</h3><p>${esc(j.fit_rationale)}</p>
-  <div class="links"><a href="${esc(j.url)}" target="_blank">Open posting ↗</a>${j.cover_letter?`<a href="${esc(j.cover_letter)}" target="_blank">Cover letter (PDF)</a>`:""}</div>
-  <h3>Points of contact</h3><div class="cards">${j.contacts.map(card).join("")}</div></div>
+  if(open===j.id)h+=`<tr class="detail"><td colspan="8"><div class="grid"><div>${j.summary?`<h3>${j.section==="applied"?"Notes":"Role summary"}</h3><p>${esc(j.summary)}</p>`:""}${j.fit?`<h3>Fit: ${j.fit}/10</h3><p>${esc(j.fit_rationale)}</p>`:""}
+  <div class="links">${j.url?`<a href="${esc(j.url)}" target="_blank">Open posting ↗</a>`:""}${j.cover_letter?`<a href="${esc(j.cover_letter)}" target="_blank">Cover letter (PDF)</a>`:""}${j.resume?`<a href="${esc(j.resume)}" target="_blank">Tailored resume (PDF)</a>`:""}</div>
+  ${j.contacts.length?`<h3>Points of contact</h3><div class="cards">${j.contacts.map(card).join("")}</div>`:""}</div>
   <div><h3>My notes</h3><textarea data-id="${j.id}" placeholder="Who I reached out to, deadlines, interview notes…">${esc(s.notes)}</textarea><p style="color:#63666a;font-size:12px">Saved automatically. Category: ${esc(j.category)}</p></div></div></td></tr>`}
- tb.innerHTML=h||'<tr><td colspan="7">No jobs match these filters.</td></tr>';
+ tb.innerHTML=h||'<tr><td colspan="8">No jobs match these filters.</td></tr>';
  const c=STATUSES.map(x=>[x,jobs.filter(j=>S(j.id).status===x).length]);
  stats.innerHTML=`<div class="stat"><b>${jobs.length}</b>jobs tracked</div>`+c.filter(x=>x[1]).map(([x,n])=>`<div class="stat"><b>${n}</b>${x}</div>`).join("")}
 tb.addEventListener("click",e=>{if(e.target.closest("select,textarea,a,.detail"))return;const r=e.target.closest("tr.row");if(r){open=open===r.dataset.id?null:r.dataset.id;render()}});
