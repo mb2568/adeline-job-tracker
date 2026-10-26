@@ -28,9 +28,14 @@ textarea{width:100%;min-height:90px;border:1px solid var(--line);border-radius:6
 .links a{display:inline-block;margin:4px 8px 4px 0;padding:6px 10px;border-radius:6px;background:var(--navy);color:#fff;text-decoration:none}
 h3{margin:12px 0 4px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--gray)}
 footer{color:var(--gray);font-size:12px;margin:18px 0}
+.tabs{display:flex;gap:6px;margin-bottom:14px}.tabs button.on{background:var(--navy);color:#fff}
+.pin{padding:4px 6px;border:1px solid var(--line);border-radius:6px;font:inherit;width:100%}
+td a{color:#1a56b0;text-decoration:none}
 </style></head><body>
-<header><h1>Adeline's Job Tracker</h1><p>Daily picks, newest first. Click a row to open details and contacts. Your status and notes are saved in this browser.</p></header>
+<header><h1>Adeline's Job Tracker</h1><p>Daily picks, newest first. Click a row to open details and contacts. Jobs and the Outreach / People tab save your status and notes in this browser.</p></header>
 <div class="wrap">
+<div class="tabs"><button id="tabJobs" class="on">Jobs</button><button id="tabPeople">Outreach / People</button></div>
+<div id="jobsView">
 <div class="stats" id="stats"></div>
 <div class="bar">
 <input id="q" placeholder="Search company, role, location…">
@@ -42,6 +47,13 @@ footer{color:var(--gray);font-size:12px;margin:18px 0}
 <table><thead><tr>
 <th data-k="date_found">Date found ▾</th><th data-k="posted" class="hide-sm">Posted</th><th data-k="company">Company</th><th data-k="role">Role</th><th data-k="location" class="hide-sm">Location</th><th data-k="salary" class="hide-sm">Salary</th><th data-k="fit">Fit</th><th data-k="status">Status</th>
 </tr></thead><tbody id="tb"></tbody></table>
+</div>
+<div id="peopleView" hidden>
+<div class="stats" id="pstats"></div>
+<div class="bar"><input id="pq" placeholder="Search name, title, company, role…"><select id="pfstatus"><option value="">All outreach statuses</option></select><select id="pfco"><option value="">All companies</option></select>
+<label style="display:flex;gap:4px;align-items:center"><input type="checkbox" id="palum" style="flex:none;min-width:0">Georgetown alums only</label><button id="pexp">Export my progress</button><button id="pimp">Import</button></div>
+<table><thead><tr><th data-p="name">Name</th><th data-p="title" class="hide-sm">Title</th><th data-p="company">Company</th><th data-p="roles">Related role(s)</th><th data-p="alum">GU alum</th><th>LinkedIn / Email</th><th data-p="status">Status</th><th data-p="touch">Last touch</th><th>Notes</th></tr></thead><tbody id="ptb"></tbody></table>
+</div>
 <footer>Each day's picks are added to <code>jobs.json</code>. Progress is stored in this browser's localStorage. Use Export to back it up or move it to another device.</footer>
 </div>
 <script>
@@ -51,7 +63,7 @@ const save=()=>localStorage.setItem(KEY,JSON.stringify(st));let DEF={};const S=i
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fitc=f=>f>=8?"f-hi":f>=6?"f-md":"f-lo";
 fetch("jobs.json?"+Date.now()).then(r=>r.json()).then(d=>{jobs=d.jobs;jobs.forEach(j=>{if(j.default_status)DEF[j.id]=j.default_status});
- STATUSES.forEach(s=>fstatus.add(new Option(s,s)));[...new Set(jobs.map(j=>j.category))].forEach(c=>fcat.add(new Option(c,c)));render();});
+ STATUSES.forEach(s=>fstatus.add(new Option(s,s)));[...new Set(jobs.map(j=>j.category))].forEach(c=>fcat.add(new Option(c,c)));render();buildPeople();if(location.hash==="#people")tab("people");});
 function card(c){const li=c.linkedin&&c.linkedin!=="unknown"?`<a href="${esc(c.linkedin)}" target="_blank">LinkedIn ↗</a>`:"LinkedIn: unknown";
  const em=c.email&&!c.email.startsWith("unknown")?`<a href="mailto:${esc(c.email.split(" ")[0])}">${esc(c.email)}</a>`:"Email: unknown";
  return `<div class="card"><h4>${esc(c.name)}${c.georgetown_alum?'<span class="alum">Georgetown alum</span>':''}</h4><div class="t">${esc(c.title)}</div>${li}<br>${em}${c.note?`<div class="n">${esc(c.note)}</div>`:""}</div>`}
@@ -76,5 +88,32 @@ document.querySelectorAll("th").forEach(th=>th.onclick=()=>{const k=th.dataset.k
  document.querySelectorAll("th").forEach(t=>t.textContent=t.textContent.replace(/ [▴▾]$/,""));th.textContent+=asc?" ▴":" ▾";render()});
 ["q","fstatus","fcat","fmin"].forEach(i=>document.getElementById(i).addEventListener("input",render));
 exp.onclick=()=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(st,null,2)],{type:"application/json"}));a.download="adeline-tracker-progress.json";a.click()};
-imp.onclick=()=>file.click();file.onchange=()=>{const f=file.files[0];if(!f)return;f.text().then(t=>{try{Object.assign(st,JSON.parse(t));save();render();alert("Progress imported.")}catch(e){alert("That file isn't a valid export.")}})};
+imp.onclick=()=>file.click();file.onchange=()=>{const f=file.files[0];if(!f)return;f.text().then(t=>{try{Object.assign(st,JSON.parse(t));save();render();if(people.length)prender();alert("Progress imported.")}catch(e){alert("That file isn't a valid export.")}})};
+
+// ---- Outreach / People tab ----
+const PSTAT=["Not contacted","Connection sent","Connected","Messaged","Chatted / call","Replied","Referral","No response","Not pursuing"];
+let people=[],psort="status",pasc=true;const PC=()=>st.__contacts||(st.__contacts={});
+const P=id=>PC()[id]||(PC()[id]={status:"Not contacted",touch:"",notes:""});
+const pkey=(c,j)=>(c.linkedin&&c.linkedin!=="unknown"?c.linkedin.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,"").toLowerCase():(c.name+"|"+j.company).toLowerCase());
+function buildPeople(){const m={};for(const j of jobs)for(const c of (j.contacts||[])){const k=pkey(c,j);
+ if(!m[k])m[k]={id:k,name:c.name,title:c.title,company:j.company,roles:[],alum:!!c.georgetown_alum,linkedin:c.linkedin,email:c.email,date:j.date_found};
+ const p=m[k];if(!p.roles.includes(j.role))p.roles.push(j.role);if(c.georgetown_alum)p.alum=true;if((!p.email||p.email.startsWith("unknown"))&&c.email)p.email=c.email}
+ people=Object.values(m);PSTAT.forEach(s=>pfstatus.add(new Option(s,s)));[...new Set(people.map(p=>p.company))].sort().forEach(c=>pfco.add(new Option(c,c)))}
+function prender(){const q=pq.value.toLowerCase(),fs=pfstatus.value,fc=pfco.value,al=palum.checked;
+ let L=people.filter(p=>(!q||[p.name,p.title,p.company,p.roles.join(" ")].join(" ").toLowerCase().includes(q))&&(!fs||P(p.id).status===fs)&&(!fc||p.company===fc)&&(!al||p.alum));
+ const v=(p,k)=>k==="status"?PSTAT.indexOf(P(p.id).status):k==="touch"?P(p.id).touch:k==="alum"?(p.alum?0:1):k==="roles"?p.roles.join():String(p[k]||"").toLowerCase();
+ L.sort((a,b)=>{let x=v(a,psort),y=v(b,psort),r=x>y?1:x<y?-1:0;if(!r)r=(a.alum?0:1)-(b.alum?0:1)||a.company.localeCompare(b.company);return pasc?r:-r});
+ ptb.innerHTML=L.map(p=>{const s=P(p.id),li=p.linkedin&&p.linkedin!=="unknown"?`<a href="${esc(p.linkedin)}" target="_blank">LinkedIn ↗</a>`:"LinkedIn: unknown",
+ em=p.email&&!p.email.startsWith("unknown")?`<a href="mailto:${esc(p.email.split(" ")[0])}">${esc(p.email)}</a>`:"Email: unknown";
+ return `<tr><td><b>${esc(p.name)}</b></td><td class="hide-sm" style="font-size:12px">${esc(p.title)}</td><td>${esc(p.company)}</td><td style="font-size:12px">${p.roles.map(esc).join("<br>")}</td><td>${p.alum?'<span class="alum">Georgetown alum</span>':"—"}</td><td style="font-size:12px">${li}<br>${em}</td>
+ <td><select class="status" data-pid="${esc(p.id)}">${PSTAT.map(x=>`<option ${x===s.status?"selected":""}>${x}</option>`).join("")}</select></td>
+ <td><input type="date" class="pin" data-pid="${esc(p.id)}" data-f="touch" value="${esc(s.touch)}"></td><td><textarea class="pin" style="min-height:44px" data-pid="${esc(p.id)}" data-f="notes" placeholder="What I sent, replies…">${esc(s.notes)}</textarea></td></tr>`}).join("")||'<tr><td colspan="9">No contacts match these filters.</td></tr>';
+ pstats.innerHTML=`<div class="stat"><b>${people.length}</b>contacts</div><div class="stat"><b>${people.filter(p=>p.alum).length}</b>Georgetown alums</div>`+PSTAT.map(x=>[x,people.filter(p=>P(p.id).status===x).length]).filter(x=>x[1]).map(([x,n])=>`<div class="stat"><b>${n}</b>${x}</div>`).join("")}
+ptb.addEventListener("change",e=>{const t=e.target,id=t.dataset.pid;if(!id)return;if(t.matches("select")){P(id).status=t.value;if(!P(id).touch&&t.value!=="Not contacted")P(id).touch=new Date().toLocaleDateString("en-CA")}else P(id)[t.dataset.f]=t.value;save();prender()});
+ptb.addEventListener("input",e=>{const t=e.target;if(t.matches("textarea")){P(t.dataset.pid).notes=t.value;save()}});
+document.querySelectorAll("th[data-p]").forEach(th=>th.onclick=()=>{const k=th.dataset.p;pasc=psort===k?!pasc:true;psort=k;document.querySelectorAll("th[data-p]").forEach(t=>t.textContent=t.textContent.replace(/ [▴▾]$/,""));th.textContent+=pasc?" ▴":" ▾";prender()});
+["pq","pfstatus","pfco","palum"].forEach(i=>document.getElementById(i).addEventListener("input",prender));
+pexp.onclick=()=>exp.click();pimp.onclick=()=>imp.click();
+function tab(t){jobsView.hidden=t!=="jobs";peopleView.hidden=t==="jobs";tabJobs.classList.toggle("on",t==="jobs");tabPeople.classList.toggle("on",t!=="jobs");location.hash=t==="jobs"?"":"people";if(t!=="jobs")prender();else render()}
+tabJobs.onclick=()=>tab("jobs");tabPeople.onclick=()=>tab("people");
 </script></body></html>
