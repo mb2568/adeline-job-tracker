@@ -1,6 +1,162 @@
 {
- "updated": "2026-10-26",
+ "updated": "2026-10-27",
  "jobs": [
+  {
+   "id": "goldman-orr-bank-reg-analyst",
+   "date_found": "2026-10-27",
+   "posted": "2026-10-23",
+   "section": "picks",
+   "company": "Goldman Sachs",
+   "role": "Analyst, Office of Regulatory Relations (Bank Regulatory Engagement)",
+   "location": "New York, NY (in office)",
+   "salary": "About $75,000 – $105,000 (per aggregator; not shown on the GS page)",
+   "url": "https://higher.gs.com/roles/187468",
+   "fit": 7,
+   "category": "Financial services regulatory relations (entry-level analyst)",
+   "summary": "Goldman's Office of Regulatory Relations manages the firm's relationships with its regulators and sets the standards for every regulatory interaction across the firm. The Bank Regulatory Engagement analyst supports exams and regulator requests, tracks remediation work, keeps up with relevant laws and rules, flags issues that need escalating, and follows up with teams across the firm to get information in on deadline. Requirements are a bachelor's degree, strong writing and Office skills, and familiarity with financial products. It's tagged early-career on Goldman's site.",
+   "fit_rationale": "This is a real entry-level regulatory job at a top bank, and it uses all three parts of her background: Holland & Knight regulatory tracking and briefings, DeGette casework that meant chasing agencies and keeping clean records, and credit-union experience with financial products and operational controls. It's compliance-flavored work rather than lobbying, so it fits if she's open to financial regulation. NYC, in office.",
+   "contacts": [
+    {
+     "name": "Kobe Martin",
+     "title": "Associate, Office of Regulatory Relations, Goldman Sachs (New York)",
+     "linkedin": "https://linkedin.com/in/martinkobe",
+     "email": "unknown",
+     "note": "Previously a Senior Analyst in ORR, so he's done this exact job. Best person to ask what the Bank Reg Engagement analyst seat is like.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Kiera Hackett",
+     "title": "Incoming Analyst, Office of Regulatory Relations, Goldman Sachs (2026 summer analyst)",
+     "linkedin": "https://www.linkedin.com/in/kiera-hackett-374916217",
+     "email": "unknown",
+     "note": "Summer analyst in ORR in 2026 with a full-time return offer. A peer-level contact who just went through ORR recruiting.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Goldman_Sachs.pdf",
+   "resume": "resumes/goldman-orr-bank-reg-analyst/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "ctc-assoc-energy-policy-analyst",
+   "date_found": "2026-10-27",
+   "posted": "2026-10-20",
+   "section": "picks",
+   "company": "Concurrent Technologies Corporation",
+   "role": "Associate Energy Policy Analyst",
+   "location": "Arlington, VA (hybrid)",
+   "salary": "$62,000 – $88,000",
+   "url": "https://concurrent-technologies-corporation.breezy.hr/p/03374cd64f41-associate-energy-policy-analyst",
+   "fit": 7,
+   "category": "Energy policy / defense energy resilience (gov contractor)",
+   "summary": "CTC is a nonprofit federal contractor. Its Energy, Resilience and Sustainability Division helps DoD and other federal clients make military installations energy-resilient. The associate analyst researches energy-resilience efforts, energy procurement options and on-site generation technologies, compiles and analyzes electricity and fuel data, turns lessons learned into policies and strategies for federal energy and water goals, and supports client relationships. The posting asks for 0–4 years of experience.",
+   "fit_rationale": "This is a genuinely entry-level energy policy role that also touches defense, two of her top priorities. Her Holland & Knight energy, infrastructure and national-security research and her DeGette energy-access casework fit well. Three things to know: the posting leans quantitative (Excel and data, with Tableau/GIS a plus), it requires U.S. citizenship and the ability to obtain a Secret clearance (an active clearance isn't required), and the pay range only reaches $75k+ in its upper half. This is today's defense-adjacent pick.",
+   "contacts": [
+    {
+     "name": "Andrew Robinson",
+     "title": "Associate Energy Policy Analyst, Concurrent Technologies Corporation",
+     "linkedin": "https://linkedin.com/in/andrew-robinson94",
+     "email": "unknown",
+     "note": "Georgetown McCourt MPP. He holds the same title as this opening (since Aug 2023), so he's the best first message.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Daniel Mahoney",
+     "title": "Energy Policy Analyst, Concurrent Technologies Corporation",
+     "linkedin": "https://linkedin.com/in/daniel-mahoney-a6a97b6b",
+     "email": "unknown",
+     "note": "Georgetown McCourt MPP and at CTC since 2023. He's one level above this role on the same team.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Elizabeth Keysar",
+     "title": "Director, Energy, Resilience and Sustainability, Concurrent Technologies Corporation",
+     "linkedin": "https://linkedin.com/in/elizabeth-keysar-31ab2111",
+     "email": "unknown",
+     "note": "Has led the hiring division for about 20 years and is likely the hiring authority.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Concurrent_Technologies_Corporation.pdf",
+   "resume": "resumes/ctc-assoc-energy-policy-analyst/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "lockheed-space-gr-rep-asc",
+   "date_found": "2026-10-27",
+   "posted": "2026-10-15",
+   "section": "picks",
+   "company": "Lockheed Martin",
+   "role": "Government Relations Representative Associate (E1), Lockheed Martin Space",
+   "location": "Littleton, CO (Denver area, on-site)",
+   "salary": "$65,500 – $121,700",
+   "url": "https://www.linkedin.com/jobs/view/4477706178",
+   "fit": 8,
+   "category": "Government relations, defense / space (entry-level)",
+   "summary": "This is an entry-level role on the Lockheed Martin Space Government Relations team in Strategy & Business Development, reporting to the Stakeholder Engagement Senior Manager. The team represents the company to federal, state and local officials and to trade, professional and policy groups. The associate supports sponsorships and tradeshows, CRM, tours and events, the budget, and day-to-day team operations. The posting calls it a foundational step for a career in public policy, government relations, advocacy and business development. It asks for about 1 year of experience, and part-time work while in school counts.",
+   "fit_rationale": "This is a true entry-level GR job in Denver, one of her target cities, at a defense and space company. Her National Security & Defense sector-group support at Holland & Knight and her Hill internship (with a Colorado member) fit directly, and her experience running the budget and systems for her student organizations covers the operations side. The current holder of this title started as the team's intern. It's more events and operations than policy writing, and it counts toward today's defense limit.",
+   "contacts": [
+    {
+     "name": "Jacob Simpson",
+     "title": "Government Relations Representative Associate, Lockheed Martin Space (Colorado)",
+     "linkedin": "https://linkedin.com/in/jacob22simpson",
+     "email": "unknown",
+     "note": "Holds this exact title. He went from GR intern to full-time in May 2026, so he can tell her how the team hires.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Chad Vorthmann",
+     "title": "Government Relations Representative, Lockheed Martin Space (Colorado)",
+     "linkedin": "https://linkedin.com/in/chad-vorthmann",
+     "email": "unknown",
+     "note": "Registered Colorado lobbyist for Lockheed Martin and former EVP of the Colorado Farm Bureau. A senior member of the Space GR team.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Lisa Luedtke",
+     "title": "Government Relations, Lockheed Martin (Colorado)",
+     "linkedin": "https://linkedin.com/in/lisa-luedtke-03527225",
+     "email": "unknown",
+     "note": "On the Colorado GR team, per LinkedIn and Apollo. I couldn't find any Georgetown alumni on the Space GR team.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Lockheed_Martin.pdf",
+   "resume": "resumes/lockheed-space-gr-rep-asc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "publiccitizen-ferc-energy-analyst",
+   "date_found": "2026-10-27",
+   "posted": "2026-10-15",
+   "section": "picks",
+   "company": "Public Citizen",
+   "role": "FERC and Energy Regulatory Analyst",
+   "location": "Washington, DC (on-site)",
+   "salary": "$63,137 – $105,513 (union position)",
+   "url": "https://publiccitizen.applytojob.com/apply/jVh4cIdZrJ/FERC-And-Energy-Regulatory-Analyst",
+   "fit": 6,
+   "category": "Energy regulatory policy (consumer advocacy nonprofit)",
+   "summary": "Public Citizen's Energy Program advocates for households before FERC and the Department of Energy. The analyst researches FERC proceedings and LNG export dockets, digs into companies and trade associations using database and investigative methods, and writes reports, fact sheets, editorial memos, op-eds and blogs. The job also answers information requests from Congress and the press. Apply by emailing a cover letter and resume to tslocum@citizen.org. Applications close Nov 13.",
+   "fit_rationale": "This is energy regulatory work with real substance, and it fits her justice focus and her energy-access casework. The posting doesn't list a number of years, but the ATS marks it \"Experienced\" and asks for investigative or opposition-research experience, so it's a stretch. Her Holland & Knight research and writing are the strongest selling point. The top of the pay range is well over $75k.",
+   "contacts": [
+    {
+     "name": "Tyson Slocum",
+     "title": "Director, Energy Program, Public Citizen",
+     "linkedin": "unknown",
+     "email": "tslocum@citizen.org",
+     "note": "Leads the Energy Program and is the application contact listed in the posting. Send the application here.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Kamil Cook",
+     "title": "Climate and Clean Energy Associate, Public Citizen (Texas office)",
+     "linkedin": "https://linkedin.com/in/kamil-cook-986498199",
+     "email": "unknown",
+     "note": "An early-career peer on Public Citizen's energy and climate work who can describe the culture. I couldn't find any Georgetown alumni on the energy team.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Public_Citizen.pdf",
+   "resume": "resumes/publiccitizen-ferc-energy-analyst/AdelineBean_Resume.pdf"
+  },
   {
    "id": "elevate-gr-associate",
    "date_found": "2026-10-26",
