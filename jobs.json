@@ -1,6 +1,135 @@
 {
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "jobs": [
+  {
+   "id": "brex-banking-ops-analyst-nyc",
+   "date_found": "2026-10-29",
+   "posted": "2026-10-29",
+   "section": "picks",
+   "company": "Brex",
+   "role": "Analyst, Banking Operations (Domestic)",
+   "location": "New York, NY (hybrid, Mon/Wed/Thu in office)",
+   "salary": "$66,331 – $82,914",
+   "url": "https://www.brex.com/careers/8924533002?gh_jid=8924533002",
+   "fit": 6,
+   "category": "Fintech, banking/payments operations (early career)",
+   "summary": "Brex (corporate cards, banking and spend management; now owned by Capital One) is hiring a Banking Operations Analyst for its Domestic Payments team in NYC. The analyst works the ACH, check, wire and stablecoin queue: investigating returns and exceptions, resolving cases in Salesforce with clear explanations, escalating trends, working with partner banks, and writing SOPs. It asks for 1+ year in banking, fintech, payments or operations, and internships count. Posted today.",
+   "fit_rationale": "This is today's financial-services pick. Her teller work at GUASFCU (cash and transaction reconciliation, operational controls, escalating exceptions, explaining things to members) maps straight onto the requirements, and internships count toward the 1-year minimum. It's operations rather than policy, but it's a well-paid way into fintech in NYC that builds on her credit-union background. The pay range tops out above $75k.",
+   "contacts": [
+    {
+     "name": "Owen Hopkins",
+     "title": "GTM Lead, Enterprise Banking, Brex (NYC)",
+     "linkedin": "https://www.linkedin.com/in/owen-hopkins-86570119b",
+     "email": "ohopkins@brex.com",
+     "note": "Georgetown SFS alum in Brex's NYC office who works on the banking side of the business. The warmest intro for a quick chat or a referral.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Mariana Hopp",
+     "title": "Banking Operations Senior Analyst, Brex",
+     "linkedin": "https://www.linkedin.com/in/mariana-hopp",
+     "email": "mhopp@brex.com",
+     "note": "Moved up from Operations Analyst to Senior Analyst in Banking Operations, so she knows this exact team and path.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Lauren A.",
+     "title": "Banking Operations Analyst, Brex",
+     "linkedin": "https://www.linkedin.com/in/lauren-a-332237133",
+     "email": "la@brex.com",
+     "note": "A current Banking Ops analyst who started at a community bank (proof and wire operator), much like her credit-union path. Good for asking about day-to-day work.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Brex.pdf",
+   "resume": "resumes/brex-banking-ops-analyst-nyc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "chaos-marcom-ops-coordinator",
+   "date_found": "2026-10-29",
+   "posted": "2026-10-28",
+   "section": "picks",
+   "company": "CHAOS Industries",
+   "role": "Marketing & Communications Operations Coordinator",
+   "location": "Washington, DC (onsite)",
+   "salary": "$80,000 – $110,000",
+   "url": "https://job-boards.greenhouse.io/chaosindustries/jobs/5278764007",
+   "fit": 5,
+   "category": "Defense tech startup, marketing & communications operations",
+   "summary": "CHAOS Industries ($1B raised, founded 2022) builds sensing and defense networks. This DC coordinator keeps the Marketing & Communications team running: managing the MarCom calendar, coordinating campaigns, events, launches and publications, maintaining shared files and templates, preparing meeting and leadership materials, tracking action items, and serving as day-to-day contact for agencies, vendors and freelancers (scopes, SOWs, invoices, budgets). It asks for 2–5 years in marketing, communications, project management or operations.",
+   "fit_rationale": "This is today's one defense pick. It's a separate team from yesterday's CHAOS Legal Ops role, so she could apply to both. It builds on her NatSec & Defense group support at Holland & Knight, managing client alerts through to publication, running calendars and budgets for her student orgs, and her GUASFCU marketing content. The pay is strong, but 2–5 years is a stretch and the work is operations, not policy.",
+   "contacts": [
+    {
+     "name": "Tanya Sharma",
+     "title": "Vice President of Marketing, CHAOS Industries (DC)",
+     "linkedin": "https://www.linkedin.com/in/tanyasharma217",
+     "email": "tanya.sharma@chaosinc.com",
+     "note": "DC-based marketing VP who joined in July 2026 from Applied Intuition, where she was Marketing Lead for Defense. She's likely the hiring manager or close to the role.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Jason Liu",
+     "title": "VP of Marketing, CHAOS Industries",
+     "linkedin": "unknown",
+     "email": "jason.liu@chaosinc.com",
+     "note": "The other marketing VP (Bay Area, previously Applied Intuition and Uber). Worth contacting if Tanya doesn't reply.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Caroline S.",
+     "title": "Head of Legal Operations, CHAOS Industries",
+     "linkedin": "https://linkedin.com/in/carolinesum",
+     "email": "unknown",
+     "note": "Already on her list from the Legal Ops role. If she reaches out there, she can mention interest in both DC openings.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_CHAOS_Industries_MarCom.pdf",
+   "resume": "resumes/chaos-marcom-ops-coordinator/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "ftp-gr-rpa-analyst",
+   "date_found": "2026-10-29",
+   "posted": "2026-10-16",
+   "section": "picks",
+   "company": "FTP (Forbes Tate Partners)",
+   "role": "Analyst, Government Relations (Research and Policy Analysis)",
+   "location": "Washington, DC (hybrid, 3 days in office)",
+   "salary": "Not listed (grade P15)",
+   "url": "https://ftpadvocacy.com/careers/",
+   "fit": 9,
+   "category": "Bipartisan GR/public affairs firm, research & policy analysis (entry-level)",
+   "summary": "FTP is a top bipartisan government relations and public affairs firm in DC. The Analyst sits on the Research and Policy Analysis team within Government Relations. The job is compiling legislative and regulatory research, writing concise policy memos and client-facing research for advocacy campaigns, helping write the weekly newsletter summarizing Congress and the Administration, and guiding RPA interns. It requires a social-science bachelor's and just 3 months of legislative or policy experience. Apply by emailing a resume, cover letter and writing sample (3 pages or less) to careers@ftpadvocacy.com.",
+   "fit_rationale": "This is the best match today: entry-level GR research at a well-regarded firm, and the bar is only 3 months of policy experience, which her Holland & Knight and DeGette internships clear. The work (memos, weekly updates, political intelligence) is almost exactly what she does at H&K now. She'll need a writing sample, and one of her H&K-style memos (non-confidential) would be ideal.",
+   "contacts": [
+    {
+     "name": "Jack Polentes",
+     "title": "Former Senior Analyst, Research & Policy Analysis, FTP (now Senior Policy & GR Manager, Backcountry Hunters & Anglers)",
+     "linkedin": "https://www.linkedin.com/in/jack-polentes-1b0126180",
+     "email": "polentes@backcountryhunters.org",
+     "note": "Georgetown alum (M.S., Environmental Metrology & Policy, 2023) who was an Analyst and then Senior Analyst on this exact RPA team. Great for an honest take on the job and maybe an intro.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Claire Vapnek",
+     "title": "Director, Research and Policy Analysis, FTP",
+     "linkedin": "https://www.linkedin.com/in/claire-vapnek",
+     "email": "cvapnek@forbes-tate.com",
+     "note": "Runs the RPA team. She started as an RPA Analyst in 2023 and was promoted to Director in May 2026, so she's likely the hiring manager.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Libby Greer",
+     "title": "Partner, Head of Government Relations, FTP",
+     "linkedin": "https://www.linkedin.com/in/libby-greer-2838ab41",
+     "email": "lgreer@forbes-tate.com",
+     "note": "The posting says the Analyst reports to a GR Partner. She leads the department and is a former House Chief of Staff. Contact her after Claire.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_FTP.pdf",
+   "resume": "resumes/ftp-gr-rpa-analyst/AdelineBean_Resume.pdf"
+  },
   {
    "id": "chaos-legal-ops-coordinator",
    "date_found": "2026-10-28",
