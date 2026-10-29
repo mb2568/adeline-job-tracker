@@ -1,6 +1,178 @@
 {
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "jobs": [
+  {
+   "id": "chaos-legal-ops-coordinator",
+   "date_found": "2026-10-28",
+   "posted": "2026-10-28",
+   "section": "picks",
+   "company": "CHAOS Industries",
+   "role": "Legal Operations Coordinator",
+   "location": "Washington, DC (onsite)",
+   "salary": "$88,000 – $120,000",
+   "url": "https://job-boards.greenhouse.io/chaosindustries/jobs/5278723007",
+   "fit": 6,
+   "category": "Defense tech startup, legal operations (early career)",
+   "summary": "CHAOS ($1B raised, founded 2022) builds sensing and defense networks. This DC-based coordinator runs the Legal team's request queue: triage and routing, contract-lifecycle and DocuSign workflows, outside-counsel e-billing, entity records, and team trackers. It reports to the Head of Legal Operations. Requirements are a bachelor's degree and 1–4 years in an administrative, coordinator, or legal support role, and the posting calls it a great fit for someone early in their career.",
+   "fit_rationale": "This is the day's one defense pick. It's a good way into a defense-tech legal team if she's leaning toward law school, it pays well, and it builds on her law-firm experience with Holland & Knight's NatSec & Defense group. It's operations rather than policy, and 1–4 years is a slight stretch (internships count toward it).",
+   "contacts": [
+    {
+     "name": "Caroline S.",
+     "title": "Head of Legal Operations, CHAOS Industries (hiring manager)",
+     "linkedin": "https://linkedin.com/in/carolinesum",
+     "email": "unknown",
+     "note": "This role reports to her. She joined in July 2026 to build out the legal function and has been posting the team's open roles on LinkedIn.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Janice Lee",
+     "title": "Contracts & Legal Ops Specialist, CHAOS Industries",
+     "linkedin": "https://linkedin.com/in/janicekalee",
+     "email": "janice.lee@chaosinc.com (pattern-inferred, not verified)",
+     "note": "A future teammate who's already on legal ops. Good person to ask what the day-to-day is like.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Travis Burke",
+     "title": "Senior Legal Counsel, CHAOS Industries",
+     "linkedin": "unknown",
+     "email": "travis.burke@chaosinc.com",
+     "note": "An attorney on the team the coordinator would support.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_CHAOS_Industries.pdf",
+   "resume": "resumes/chaos-legal-ops-coordinator/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "bpc-energy-policy-analyst",
+   "date_found": "2026-10-28",
+   "posted": "2026-10-28",
+   "section": "picks",
+   "company": "Bipartisan Policy Center",
+   "role": "Policy Analyst, Energy Program",
+   "location": "Washington, DC (hybrid, Tue–Thu in office)",
+   "salary": "$70,000 – $75,000",
+   "url": "https://pac.org/job/policy-analyst-energy-program",
+   "fit": 8,
+   "category": "Energy policy think tank (analyst)",
+   "summary": "BPC's Energy Program works on electricity, permitting, carbon management, AI and energy, critical minerals, and tax incentives. The analyst researches energy issues, drafts briefs, reports and fact sheets, supports stakeholder engagement and convenings, helps with communications and grant writing, and mentors interns. It asks for a bachelor's degree plus 2–4 years of experience (or a master's with 0–2). Apply with a resume, cover letter and writing sample through BPC's ADP careers page (linked from the posting).",
+   "fit_rationale": "It's squarely in the energy priority, and the bipartisan model suits her Hill and Holland & Knight briefing experience, plus her DeGette energy casework. 2–4 years is a stretch, and the pay tops out right at $75k. Her student-org event and budget work fits the convenings part. She'll need a writing sample.",
+   "contacts": [
+    {
+     "name": "Zahava Urecki",
+     "title": "Senior Policy Analyst, Energy, BPC",
+     "linkedin": "https://www.linkedin.com/in/zahava-urecki-42387075",
+     "email": "zurecki@bipartisanpolicy.org",
+     "note": "Former Senate Energy & Natural Resources staffer and Manchin aide. She came up through the analyst track this role feeds.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Sarah Turyahikayo",
+     "title": "Senior Policy Analyst, Energy, BPC",
+     "linkedin": "https://www.linkedin.com/in/sarah-n-turyahikayo",
+     "email": "sturyahikayo@bipartisanpolicy.org",
+     "note": "Previously at ICF. A peer-level contact on the Energy team.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Xan Fishman",
+     "title": "Executive Vice President, Energy, BPC",
+     "linkedin": "https://www.linkedin.com/in/xan-fishman-43b59024",
+     "email": "xfishman@bipartisanpolicy.org",
+     "note": "Leads the Energy Program. Contact only after reaching the analysts.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Bipartisan_Policy_Center.pdf",
+   "resume": "resumes/bpc-energy-policy-analyst/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "fsvector-gr-associate",
+   "date_found": "2026-10-28",
+   "posted": "2026-10-25",
+   "section": "picks",
+   "company": "FS Vector",
+   "role": "Associate, Government Relations",
+   "location": "Washington, DC (in office)",
+   "salary": "Not listed (competitive)",
+   "url": "https://www.fsvector.com/careers/associate-government-relations",
+   "fit": 9,
+   "category": "Fintech policy consultancy, government relations (entry-level, startup feel)",
+   "summary": "FS Vector is a startup-style DC consultancy that works on financial services, fintech and crypto policy. The GR Associate tracks legislation, hearings, rulemakings and enforcement, writes client-ready memos and briefings, prepares materials for meetings with Members, staff and regulators, and builds relationships across the policy world. It's explicitly early-career: a bachelor's degree is required, Hill or agency experience is preferred but not necessary, and the posting says it's good for people heading to law school later.",
+   "fit_rationale": "This is the closest match today: entry-level GR in fintech policy at a horizontal, startup-like firm. It matches her Holland & Knight memo and briefing work, her DeGette Hill experience, and her credit-union background, and it openly welcomes people who may go to law school. A Georgetown SFS alum co-leads the practice.",
+   "contacts": [
+    {
+     "name": "Peter Freeman",
+     "title": "Partner, co-lead of Government Relations, FS Vector",
+     "linkedin": "https://www.linkedin.com/in/peterjfreeman",
+     "email": "unknown",
+     "note": "Georgetown SFS B.A. He co-leads the GR practice with Andy Barbour and is likely the decision maker.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Max Corbett",
+     "title": "Government Relations, FS Vector",
+     "linkedin": "https://linkedin.com/in/maxcorbett",
+     "email": "mcorbett@fsvector.com",
+     "note": "A current Georgetown student who works in FS Vector GR (and also at GUASFCU, her own credit union). The warmest intro.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "PJ Cunningham",
+     "title": "Government Relations Analyst, FS Vector",
+     "linkedin": "https://www.linkedin.com/in/pjccunningham",
+     "email": "pcunningham@fsvector.com",
+     "note": "Moved up from Advocacy Associate to Analyst, so he knows this path firsthand.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_FS_Vector.pdf",
+   "resume": "resumes/fsvector-gr-associate/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "tmobile-ga-analyst-state-ag",
+   "date_found": "2026-10-28",
+   "posted": "2026-10-15",
+   "section": "picks",
+   "company": "T-Mobile",
+   "role": "Analyst, Government Affairs (State Attorneys General team)",
+   "location": "Washington, DC",
+   "salary": "Base $60,100 – $108,500 (total target cash $66,110 – $119,350)",
+   "url": "https://tmobile.wd1.myworkdayjobs.com/External/job/Washington-District-of-Columbia/Analyst--Government-Affairs_REQ373801-1",
+   "fit": 7,
+   "category": "Corporate government affairs, state AG/consumer protection (analyst)",
+   "summary": "The analyst sits on T-Mobile's State AG team within Government Affairs. The job is a weekly 50-state AG enforcement report, media monitoring, briefing materials and talking points for executives and AG meetings, tracking consumer protection, antitrust and privacy actions, coordinating with consultants and trade associations, and managing the state political giving program. The posting asks for about 2–4 years of experience; a bachelor's is preferred. Posted Oct 15.",
+   "fit_rationale": "It's a strong legal-policy role if she's considering law school, and her weekly Holland & Knight briefings are almost exactly the weekly AG report. 2–4 years is a stretch. The pay range runs well above $75k.",
+   "contacts": [
+    {
+     "name": "Dan Leary",
+     "title": "Director of State Government Affairs, T-Mobile (DC)",
+     "linkedin": "https://www.linkedin.com/in/dan-leary-9417873",
+     "email": "dan.leary@t-mobile.com",
+     "note": "Leads state government affairs out of DC, so he's likely close to the State AG team.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Emma Christman",
+     "title": "Senior Manager, Government Affairs, T-Mobile (DC)",
+     "linkedin": "https://www.linkedin.com/in/emmachristman",
+     "email": "emma.christman@t-mobile.com",
+     "note": "Formerly at USTelecom. Works on GA communications and engagement in DC.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Jesse Childs",
+     "title": "Government Affairs, T-Mobile (DC)",
+     "linkedin": "https://www.linkedin.com/in/jesserchilds",
+     "email": "jesse.childs@t-mobile.com",
+     "note": "DC government affairs team member.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_T-Mobile.pdf",
+   "resume": "resumes/tmobile-ga-analyst-state-ag/AdelineBean_Resume.pdf"
+  },
   {
    "id": "goldman-orr-bank-reg-analyst",
    "date_found": "2026-10-27",
