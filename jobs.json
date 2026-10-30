@@ -1,6 +1,178 @@
 {
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "jobs": [
+  {
+   "id": "invenergy-regional-comms-analyst",
+   "date_found": "2026-10-30",
+   "posted": "2026-10-30",
+   "section": "picks",
+   "company": "Invenergy",
+   "role": "Analyst, Regional Communications",
+   "location": "Chicago, IL (hybrid, in office Mon–Thu)",
+   "salary": "$65,000 – $82,000 + 15% annual bonus",
+   "url": "https://invenergyllc.wd1.myworkdayjobs.com/invenergycareers/job/Chicago-IL/Analyst--Regional-Communications_R11598-1",
+   "fit": 7,
+   "category": "Energy, corporate affairs / communications (early career)",
+   "summary": "Invenergy, North America's largest privately held developer, owner and operator of power infrastructure (gas, wind, solar, storage, transmission), is hiring a Regional Communications Analyst in its Chicago HQ Corporate Affairs group. The analyst helps write and carry out communications plans for energy projects across several states: talking points, presentations, op-eds and letters to the editor, landowner communications, project websites and public statements. The role works with the Community Engagement and Government Affairs teams and translates complex energy topics for the public. It asks for 1–3 years in communications, political campaigns or offices, journalism, PR or organizing. Posted today.",
+   "fit_rationale": "This is today's energy-communications pick, from a major energy developer. Her House office work explicitly counts ('political offices'), and her H&K energy and infrastructure research, co-authored client alerts, constituent correspondence and GUASFCU marketing content line up with the writing-heavy duties. It's comms rather than policy, but it sits right next to Government Affairs. The base range reaches $82k plus a 15% bonus.",
+   "contacts": [
+    {
+     "name": "Reine Burrell",
+     "title": "Former Senior Manager, Global Public Affairs & Corporate Impact, Invenergy (Chicago, through Sept 2025)",
+     "linkedin": "https://linkedin.com/in/reine-burrell-72545445",
+     "email": "unknown",
+     "note": "Georgetown B.A. in Political Science (2015) who spent several years in Invenergy's Chicago public affairs and government affairs teams. She can give an insider's view of Corporate Affairs and possibly an intro.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Jefferson C.",
+     "title": "Senior Director, Regional Communications, Invenergy (Chicago)",
+     "linkedin": "unknown",
+     "email": "jcaves@invenergy.com",
+     "note": "Leads Regional Communications, so this is likely the hiring manager. Before joining in 2025 he spent years in FTI Consulting's Energy & Natural Resources strategic communications practice.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Sophie S.",
+     "title": "Senior Analyst, Communications, Invenergy (Chicago)",
+     "linkedin": "unknown",
+     "email": "sshulman@invenergy.com",
+     "note": "Started at Invenergy as an Analyst, Communications in 2023 and was promoted to Senior Analyst. Good for asking about the day-to-day and the growth path.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Invenergy.pdf",
+   "resume": "resumes/invenergy-regional-comms-analyst/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "clearpath-policy-assoc-cpnr",
+   "date_found": "2026-10-30",
+   "posted": "2026-10-29",
+   "section": "picks",
+   "company": "ClearPath",
+   "role": "Policy Associate, Clean Power and Natural Resources",
+   "location": "Washington, DC (onsite)",
+   "salary": "$70,000 – $80,000",
+   "url": "https://ats.rippling.com/clearpath/jobs/ffc8fce4-9838-41b5-9df0-938fedd74ed2",
+   "fit": 8,
+   "category": "Energy policy, clean power advocacy (DC)",
+   "summary": "ClearPath is a conservative clean-energy policy nonprofit that educates Congress, the White House and agencies on nuclear, geothermal, hydropower, storage, critical minerals, permitting and grid innovation. The Policy Associate on the Clean Power, Natural Resources and Research team covers electricity demand from data centers and AI, geothermal, critical minerals, permitting, the grid, hydropower and long-duration storage. The work includes quick and in-depth research, written products on legislative and regulatory activity, rapid response for Capitol Hill, educational materials and events, and thought leadership (blogs, white papers), alongside the Policy, Government Affairs and External Affairs teams. It asks for 2–4 years in a closely related field. Posted 10/29.",
+   "fit_rationale": "This is today's top energy-policy pick and the closest match to her H&K energy and infrastructure research, memo writing and Hill exposure. 2–4 years is a stretch, so lead with the internships and published client alerts. The pay tops out at $80k, just above her $75k floor. ClearPath is right-of-center, so it's worth deciding whether that suits her.",
+   "contacts": [
+    {
+     "name": "Sam Lebo",
+     "title": "Former Policy Fellow, ClearPath (Sept 2024 – Oct 2025)",
+     "linkedin": "https://linkedin.com/in/samlebo",
+     "email": "unknown",
+     "note": "Georgetown graduate who recently spent a year on ClearPath's policy team. The best person to ask what the policy team values and how to stand out.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Hillary O'Brien",
+     "title": "Managing Director, Clean Power, Natural Resources, and Research, ClearPath",
+     "linkedin": "http://www.linkedin.com/in/hillarypobrien",
+     "email": "obrien@clearpath.org",
+     "note": "Leads the exact team this Associate joins, so she's likely the hiring manager. She's a former Staff Director of the House Science Committee's Energy Subcommittee.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Audrey Magnuson",
+     "title": "Policy Associate, ClearPath",
+     "linkedin": "http://www.linkedin.com/in/audrey-magnuson-764701180",
+     "email": "magnuson@clearpath.org",
+     "note": "A current Policy Associate (joined Oct 2025 from ICF climate research), so she's in the same role. Ideal for a 15-minute chat about the job.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_ClearPath.pdf",
+   "resume": "resumes/clearpath-policy-assoc-cpnr/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "crusoe-contracts-coordinator-denver",
+   "date_found": "2026-10-30",
+   "posted": "2026-10-21",
+   "section": "picks",
+   "company": "Crusoe",
+   "role": "Contracts Coordinator (IT, Network & Cloud)",
+   "location": "Denver, CO (Cherry Creek, fully onsite)",
+   "salary": "$75,000 – $90,000 + RSUs",
+   "url": "https://jobs.ashbyhq.com/crusoe/52ebf84d-a113-40c1-9bd3-0a626fbe2efe",
+   "fit": 5,
+   "category": "AI/energy infrastructure startup, legal ops / contracts",
+   "summary": "Crusoe is a fast-growing startup and vertically integrated AI infrastructure company with an 'energy-first' approach to powering data centers. The Denver Contracts Coordinator owns technology contract workflows: administering Ironclad and DocuSign, triaging procurement requests, helping draft and negotiate MSAs, SOWs, NDAs, DPAs and SLAs, and checking that vendor contracts meet security and privacy standards (GDPR, CCPA, SOC 2). The role also keeps contract records audit-ready and trains internal teams on intake. It asks for 2–4 years in IT procurement, technology contract administration or legal ops. Posted 10/21.",
+   "fit_rationale": "This is today's startup and Denver pick, at an AI and energy company. It's legal ops rather than policy and is a real stretch (2–4 years of contracts experience plus technical knowledge). Her law-firm document management, deadline tracking, GUASFCU controls and data-policy research are the bridge. The pay floor is $75k plus equity, and it's in Denver.",
+   "contacts": [
+    {
+     "name": "Stephen Martin",
+     "title": "Global Risk and Compliance Counsel, Crusoe (Denver)",
+     "linkedin": "https://www.linkedin.com/in/stephen-martin-1652903",
+     "email": "unknown",
+     "note": "Georgetown Law LL.M. alum based in Crusoe's Denver legal team. A Hoya connection inside Legal, and he's been hiring for his own team.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Paige Ambrose",
+     "title": "Contracts Coordinator, Crusoe",
+     "linkedin": "http://www.linkedin.com/in/paige-ambrose33",
+     "email": "pambrose@crusoe.ai",
+     "note": "Currently in the same Contracts Coordinator role (she joined Dec 2025 from legal-ops contract administration). Best for an honest read on the work.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Henry C.",
+     "title": "Legal Operations Manager, Crusoe",
+     "linkedin": "unknown",
+     "email": "hcho@crusoe.ai",
+     "note": "Legal Ops manager with a contracts and compliance background (Intel, AppDynamics, Splunk). Likely close to the hiring decision for this role.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Crusoe.pdf",
+   "resume": "resumes/crusoe-contracts-coordinator-denver/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "adyen-compliance-oversight-chicago",
+   "date_found": "2026-10-30",
+   "posted": "2026-10-20",
+   "section": "picks",
+   "company": "Adyen",
+   "role": "Compliance Officer, Oversight",
+   "location": "Chicago, IL (office-first, 3+ days in office)",
+   "salary": "$110,000 – $145,000 + RSUs",
+   "url": "https://job-boards.greenhouse.io/adyen/jobs/8274392",
+   "fit": 5,
+   "category": "Fintech / payments compliance (second line)",
+   "summary": "Adyen, the global payments platform used by Meta, Uber and Microsoft, is hiring a Compliance Oversight Officer in Chicago. The role runs second-line quality-assurance testing on customer onboarding, AML reviews, ongoing monitoring and terminations, then works with first-line teams on remediation. It also helps with quarterly compliance reporting to management, trains teams on controls, and helps improve the oversight methodology. It asks for 1–3 years in a second-line compliance, oversight or audit role. Posted 10/20.",
+   "fit_rationale": "This is today's financial-services and regulatory pick, and the pay is excellent. Her GUASFCU work (identity verification, SOPs, escalating exceptions) and her H&K research on financial-services regulation and enforcement are relevant. However, she hasn't worked in a formal compliance or audit function, so it's a stretch. Worth a shot given the 1–3 year band.",
+   "contacts": [
+    {
+     "name": "Cindy S.",
+     "title": "Compliance Advisory Team Lead – Americas, Adyen",
+     "linkedin": "unknown",
+     "email": "cindy.shegalov@adyen.com",
+     "note": "Leads compliance advisory for the Americas and has a public-policy background (Amazon, Google, Visa global public policy). A natural bridge from policy into compliance.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Saniya Galimova",
+     "title": "Compliance Officer, Adyen (New York)",
+     "linkedin": "http://www.linkedin.com/in/saniya-galimova-cams",
+     "email": "saniya.galimova@adyen.com",
+     "note": "A US Compliance Officer who previously led compliance oversight at Lithic, so she knows this exact type of work.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Kimberly K.",
+     "title": "Compliance Officer, Adyen",
+     "linkedin": "unknown",
+     "email": "kim.kwan@adyen.com",
+     "note": "Moved into Compliance Officer (Sept 2026) from Adyen's customer onboarding team. Good for advice on breaking into compliance without prior compliance experience.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Adyen.pdf",
+   "resume": "resumes/adyen-compliance-oversight-chicago/AdelineBean_Resume.pdf"
+  },
   {
    "id": "brex-banking-ops-analyst-nyc",
    "date_found": "2026-10-29",
