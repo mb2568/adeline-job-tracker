@@ -1,6 +1,205 @@
 {
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "jobs": [
+  {
+   "id": "betterment-compliance-associate-nyc",
+   "date_found": "2026-10-31",
+   "posted": "2026-10-30",
+   "section": "picks",
+   "company": "Betterment",
+   "role": "Compliance Associate",
+   "location": "New York, NY (HQ; in office Mon–Thu)",
+   "salary": "$90,000 – $105,000 + equity",
+   "url": "https://job-boards.greenhouse.io/betterment/jobs/8327765",
+   "fit": 6,
+   "category": "Fintech / financial services regulatory compliance (early career)",
+   "summary": "Betterment, the automated investing, savings and retirement fintech, is hiring a Compliance Associate at its NYC HQ. The role turns SEC and FINRA requirements into clear workflows, procedures, process maps and control documentation, builds compliance workflows in tools like Jira and Claude, spots where processes break down and proposes fixes, and supports day-to-day program management across compliance workstreams. It asks for 1–2 years in compliance, operations, program management or a related field. Posted yesterday.",
+   "fit_rationale": "This is today's fintech/regulatory pick, and the pay is strong. The job is about translating dense regulation into usable procedures, which is what her H&K financial-services and securities research already does, and GUASFCU gives her hands-on experience following SOPs and controls at a real financial institution. It's compliance rather than policy, and 1–2 years is a mild stretch.",
+   "contacts": [
+    {
+     "name": "Joe Greenspan",
+     "title": "Senior Product Manager, Betterment (New York)",
+     "linkedin": "https://www.linkedin.com/in/josg",
+     "email": "unknown",
+     "note": "Georgetown B.A. (Economics and Philosophy) who joined Betterment in May 2026; he isn't on the compliance team. A friendly Hoya connection for a read on the culture and possibly an intro to Compliance.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Brian Woldow",
+     "title": "Chief Compliance Officer, Betterment (New York)",
+     "linkedin": "http://www.linkedin.com/in/brian-woldow",
+     "email": "brian.woldow@betterment.com",
+     "note": "Leads Betterment's compliance function (joined 2021 after years as a compliance executive and assistant general counsel at Bank of America Merrill Lynch). This role sits in his organization.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Meredith Young",
+     "title": "Compliance Manager, Betterment (New York)",
+     "linkedin": "http://www.linkedin.com/in/meredith-young",
+     "email": "meredith.young@betterment.com",
+     "note": "Started as a Compliance Analyst and Associate at Clear Street before joining Betterment in 2024. A great person to ask about the day-to-day and how she broke into compliance.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Betterment.pdf",
+   "resume": "resumes/betterment-compliance-associate-nyc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "integrate-gov-affairs-analyst-dc",
+   "date_found": "2026-10-31",
+   "posted": "2026-10-30",
+   "section": "picks",
+   "company": "Integrate",
+   "role": "Government Affairs Analyst",
+   "location": "Washington, DC (on-site, K St office)",
+   "salary": "$120,000 – $160,000 + equity",
+   "url": "https://jobs.ashbyhq.com/integrate/f770a365-00e9-4c3f-b5b3-3165cbf7de21",
+   "fit": 7,
+   "category": "Defense tech startup, government affairs",
+   "summary": "Integrate is a Seattle defense-tech software startup ($17M Series A led by FPV Ventures, a $25M U.S. Space Force contract) that builds real-time project management for complex government programs. It's hiring its first Government Affairs Analyst for its new DC office, working directly with the Managing Director of Washington Operations. The job: track legislation, appropriations and executive branch policy across defense, intelligence, space and emerging tech; follow the NDAA and defense appropriations cycles; find policy and funding levers; build relationships with Hill staff and agency officials; and work with outside consultants and industry associations. It asks for 2–5+ years in government affairs or a related federal role, and US-person status (ITAR). Posted yesterday.",
+   "fit_rationale": "This is today's startup and defense pick (the only defense role today), and the pay is excellent. Her H&K work supporting the National Security & Defense sector group co-leads, plus her House internship, maps directly onto it. 2–5 years is a real stretch, so lead with the defense research and Hill meeting prep and show the 'own the plan' energy they ask for. Early-hire roles like this are often flexible on years.",
+   "contacts": [
+    {
+     "name": "Chris Beauregard",
+     "title": "Managing Director, Washington Operations, Integrate (Washington, DC)",
+     "linkedin": "https://www.linkedin.com/in/jchristopherbeauregard",
+     "email": "unknown",
+     "note": "Runs Integrate's DC office, government affairs and federal sales (joined Sept 2025 after White House, Pentagon and Space Force roles). This role reports directly to him, so he is the hiring manager.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "John Conafay",
+     "title": "Co-Founder & CEO, Integrate",
+     "linkedin": "https://www.linkedin.com/in/conafay",
+     "email": "unknown",
+     "note": "Integrate's co-founder and CEO. At a startup this size, a short, specific note to the CEO can get read.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Integrate.pdf",
+   "resume": "resumes/integrate-gov-affairs-analyst-dc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "sullcrom-ga-analyst-tax-dc",
+   "date_found": "2026-10-31",
+   "posted": "2026-10-29",
+   "section": "picks",
+   "company": "Sullivan & Cromwell LLP",
+   "role": "Analyst, Government Affairs (Tax)",
+   "location": "Washington, DC",
+   "salary": "$70,000 – $80,000 + overtime eligibility and discretionary bonus",
+   "url": "https://www.linkedin.com/jobs/view/4484591133",
+   "fit": 7,
+   "category": "Law firm government affairs / tax policy (early career)",
+   "summary": "Sullivan & Cromwell, one of the most prestigious Wall Street law firms, is hiring an analyst for its DC Tax Group and legislative affairs attorneys. The analyst compiles a daily tax-policy roundup (Treasury/IRS guidance, House Ways & Means and Senate Finance activity, new bills, press), drafts and manages the weekly S&C Tax Policy Update sent to about 3,500 clients, summarizes regulations and hearings, transcribes portions of markups, files FOIA requests, and supports the firm's Lobbying Disclosure Act filings. It asks for 2+ years of relevant experience, ideally with Treasury or the tax-writing committees. Posted Oct 29.",
+   "fit_rationale": "This is today's closest match to what she already does at H&K: daily legislative and regulatory monitoring, client updates and newsletters at a top law firm. Tax is a new subject, but the skills transfer directly. 2+ years is a stretch, and the top of the range ($80k) clears her $75k floor. Note: apply through S&C's careers portal (sullcrom.com/careers, Washington DC office).",
+   "contacts": [
+    {
+     "name": "Alex LePore",
+     "title": "Former Government Affairs Analyst, Sullivan & Cromwell (2013–15); now Deputy to the Chairman for Policy, FDIC",
+     "linkedin": "https://www.linkedin.com/in/alex-lepore-73227b36",
+     "email": "unknown",
+     "note": "A Georgetown alum who held this exact analyst job at S&C before law school and a senior policy role at the FDIC. Perfect for advice on how to stand out and what the job leads to.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Austin P.",
+     "title": "Government Affairs Analyst, Sullivan & Cromwell LLP",
+     "linkedin": "unknown",
+     "email": "peaya@sullcrom.com",
+     "note": "Currently holds the same title. He started as an S&C paralegal, then became a Jr. Analyst and then Analyst, and was a reporter/researcher at MLex before that. Best for a candid read on the work.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Thomas Mullins",
+     "title": "Government Affairs, Sullivan & Cromwell LLP (Washington, DC)",
+     "linkedin": "http://www.linkedin.com/in/tom-mullins-534028326",
+     "email": "mullinst@sullcrom.com",
+     "note": "A long-time member of S&C's DC government affairs team, so likely close to the hiring decision.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Sullivan_Cromwell.pdf",
+   "resume": "resumes/sullcrom-ga-analyst-tax-dc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "nasem-apo-gulf-energy-systems",
+   "date_found": "2026-10-31",
+   "posted": "2026-10-29",
+   "section": "picks",
+   "company": "The National Academies of Sciences, Engineering, and Medicine",
+   "role": "Associate Program Officer – Future of Gulf Energy Systems (Gulf Research Program)",
+   "location": "Washington, DC (Keck Center; hybrid, ~60% on-site)",
+   "salary": "$73,760 – $92,190",
+   "url": "https://nas.wd1.myworkdayjobs.com/NAS_Careers/job/Keck-Center/Associate-Program-Officer----Future-of-Gulf-Energy-Systems_R0002822",
+   "fit": 5,
+   "category": "Energy policy / research program (nonprofit)",
+   "summary": "The National Academies' Gulf Research Program (set up in 2013 after Deepwater Horizon) is hiring an Associate Program Officer for its Future of Gulf Energy Systems unit. The APO supports the energy portfolio, including legacy offshore oil and gas infrastructure and the future of Gulf energy. The work includes building and running communities of practice, managing relationships with partners and grantees, supporting grant solicitations and reviews, writing background papers and technical summaries, preparing agendas, briefing books and meeting summaries, and keeping program records and data. It asks for 3 years of related experience; a master's is preferred. A cover letter is required. Posted Oct 29.",
+   "fit_rationale": "This is today's energy pick. Her H&K energy and environment research, background briefings, and experience coordinating the law journal's contributors and deadlines are relevant, and DC hybrid with most of the range above $75k is solid. Three years is a stretch (it sits at the top of her 0–3 band), and the work is more program/grant management than policy advocacy, so the fit is moderate.",
+   "contacts": [
+    {
+     "name": "Ellen Bannon",
+     "title": "Former Gulf Research Program staff, National Academies (2019–2021); now PhD student, Columbia Mailman School of Public Health",
+     "linkedin": "https://www.linkedin.com/in/ellen-bannon",
+     "email": "unknown",
+     "note": "A Georgetown SFS grad who worked in the Gulf Research Program right after Georgetown. Ask her what GRP looks for in early-career program staff.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Lauren Augustine",
+     "title": "Executive Director, Gulf Research Program, National Academies",
+     "linkedin": "http://www.linkedin.com/in/lauren-alexander-augustine-ph-d-2903724",
+     "email": "lealexander@nas.edu",
+     "note": "Leads the whole Gulf Research Program. Too senior for a cold ask, but good to know and to mention you're inspired by GRP's work.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Melissa Forbes",
+     "title": "Deputy Executive Director, Gulf Research Program, National Academies",
+     "linkedin": "https://www.linkedin.com/in/forbesm1",
+     "email": "unknown",
+     "note": "GRP's deputy executive director, senior to the hiring Program Officer. Worth a brief, respectful note after you apply.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_National_Academies.pdf",
+   "resume": "resumes/nasem-apo-gulf-energy-systems/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "metrc-ga-associate-west",
+   "date_found": "2026-10-31",
+   "posted": "2026-10-27",
+   "section": "picks",
+   "company": "Metrc",
+   "role": "Government Affairs Associate (Western half of US)",
+   "location": "Remote / hybrid (Western U.S. territory; Denver works), ~30% travel",
+   "salary": "Not listed",
+   "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4564456",
+   "fit": 5,
+   "category": "Regulatory-tech startup, state government affairs",
+   "summary": "Metrc is a fast-growing regulatory-technology company. Its software, RFID tags and support team let states track and regulate cannabis from seed to sale, and it is the market leader. The Government Affairs Associate for the western U.S. engages state legislators and regulators in current and target states, oversees state lobbyists and consultants, monitors legislation and regulatory and commission meetings, analyzes bills for business impact, drafts talking points and materials, reports metrics in a CRM, supports political compliance, and helps with government procurement proposals. It asks for 2+ years in government affairs, preferably multi-state and on tech or regulated-industry issues. Posted Oct 27.",
+   "fit_rationale": "This is today's state-policy and Denver-friendly pick. Metrc's GA Director is based in Denver, and the territory is the West. Her multi-state bill tracking at NEFE, her H&K regulatory analysis and her House office (Rep. DeGette, CO) all fit. 2+ years of GA is a stretch, the salary isn't listed, and the industry is cannabis, so consider whether that suits her.",
+   "contacts": [
+    {
+     "name": "Jean Robinson",
+     "title": "Government Affairs Director, Metrc (Denver, CO)",
+     "linkedin": "http://www.linkedin.com/in/jean-robinson-371a1714",
+     "email": "jean.robinson@metrc.com",
+     "note": "Denver-based GA Director and former Colorado Department of Revenue legislative liaison and lobbyist. Most likely the hiring manager (the role supports the GA Director). A Colorado/DeGette connection could be a nice opener.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Michael V.",
+     "title": "Government Affairs Associate, Metrc (California)",
+     "linkedin": "unknown",
+     "email": "michael.villanueva@metrc.com",
+     "note": "Holds this same title (joined Aug 2025 after being a legislative aide and advocate at a Sacramento lobbying firm). Best for a candid read on the role.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Metrc.pdf",
+   "resume": "resumes/metrc-ga-associate-west/AdelineBean_Resume.pdf"
+  },
   {
    "id": "invenergy-regional-comms-analyst",
    "date_found": "2026-10-30",
