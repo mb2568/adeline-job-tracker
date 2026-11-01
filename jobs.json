@@ -1,6 +1,205 @@
 {
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "jobs": [
+  {
+   "id": "hra-analyst-inclusive-cities",
+   "date_found": "2026-11-01",
+   "posted": "2026-10-29",
+   "section": "picks",
+   "company": "HR&A Advisors",
+   "role": "Analyst, Inclusive Cities",
+   "location": "New York, NY or Washington, DC (hybrid)",
+   "salary": "$83,200 – $98,571 + discretionary bonus",
+   "url": "https://hraadvisors.applytojob.com/apply/OIdLbkgMzp/Analyst-Inclusive-Cities",
+   "fit": 6,
+   "category": "Urban policy / government consulting (racial & economic equity)",
+   "summary": "HR&A Advisors, a real estate, economic development and public policy consulting firm, is hiring an Analyst for its Inclusive Cities practice, which helps cities, foundations and newly elected officials advance racial and economic equity. Analysts do policy research and literature reviews, municipal budget and policy analysis, power mapping, stakeholder and community engagement (interviews, focus groups, surveys), transition work for incoming administrations, and write memos and PowerPoint deliverables. It asks for 2–4 years of experience, so it's a stretch. Posted Oct 29.",
+   "fit_rationale": "This is government consulting with a real policy mission, and the pay is strong. Her Justice and Peace major, IRC refugee casework and House office experience fit the equity and community focus well, and her H&K research and memo writing is the core analyst skill. The 2–4 years ask is the main stretch, so she should lead with her research and writing.",
+   "contacts": [
+    {
+     "name": "Karen Chen",
+     "title": "Analyst, HR&A Advisors (New York)",
+     "linkedin": "https://www.linkedin.com/in/karen-k-chen",
+     "email": "kchen@hraadvisors.com",
+     "note": "Georgetown alum (Master of Urban & Regional Planning, 2022) who joined HR&A as an Analyst in April 2026, the same title as this role. She's the best person to ask about the analyst experience and the Inclusive Cities team.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Tommy Truong",
+     "title": "Director, Inclusive Cities, HR&A Advisors (Los Angeles)",
+     "linkedin": "https://www.linkedin.com/in/tommy-truong-3680a7b5",
+     "email": "ttruong@hraadvisors.com",
+     "note": "Director in the Inclusive Cities practice who rose from Senior Analyst, so he's likely close to analyst hiring for the team.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Sarah Solon",
+     "title": "Partner, Inclusive Cities, HR&A Advisors (Los Angeles)",
+     "linkedin": "https://www.linkedin.com/in/sarah-solon-8136539b",
+     "email": "ssolon@hraadvisors.com",
+     "note": "Partner and longtime Inclusive Cities leader (former Deputy Director of NYC's Mayor's Office of Community Mental Health). Senior, so a short and specific note works best.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_HRA_Advisors.pdf",
+   "resume": "resumes/hra-analyst-inclusive-cities/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "clearpath-nuclear-associate",
+   "date_found": "2026-11-01",
+   "posted": "2026-10-29",
+   "section": "picks",
+   "company": "ClearPath",
+   "role": "Nuclear Associate",
+   "location": "Washington, DC",
+   "salary": "$70,000 – $80,000 + up to 10% bonus",
+   "url": "https://ats.rippling.com/clearpath/jobs/db30236b-b6f6-4c38-acb3-00d5e6213dcc",
+   "fit": 7,
+   "category": "Energy policy (nuclear) / Capitol Hill education",
+   "summary": "ClearPath, the conservative clean-energy policy nonprofit in DC, is hiring a Nuclear Associate for its nuclear program. The role researches and analyzes fission and fusion policy, turns legislative and regulatory developments into research insights and rapid-response products, finds policy gaps, drafts white papers and blogs, and builds Capitol Hill educational materials and events with the Policy, Government Affairs and External Affairs teams. It reports to Jake Kincer, Senior Program Manager of Nuclear, and asks for 2–4 years (a stretch). Posted Oct 29. This is a different role from the Clean Power Policy Associate pick earlier.",
+   "fit_rationale": "This is today's best energy pick: a real policy job at a respected DC energy group that does Hill education. Her H&K energy and infrastructure tracking, briefings for former Members, and House experience fit well, and the defense sector work connects to energy security. The base tops out at $80k (the bottom is under $75k, but the bonus helps), and the years ask is a stretch.",
+   "contacts": [
+    {
+     "name": "Isabella Martinez",
+     "title": "ClearPath Partner Fellow with C3 Solutions (Arlington, VA)",
+     "linkedin": "https://www.linkedin.com/in/isabella-c-martinez-897257159",
+     "email": "martinez@clearpath.org (pattern-inferred, not verified)",
+     "note": "Georgetown alum who joined ClearPath in Oct 2026 as a Partner Fellow after interning at American Action Forum and in the House. She has done nuclear regulatory research and is a peer, so she's easy to ask for a chat.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Jacob (Jake) Kincer",
+     "title": "Senior Nuclear Program Manager, ClearPath (DC area)",
+     "linkedin": "http://www.linkedin.com/in/jacob-kincer-44493ba3",
+     "email": "kincer@clearpath.org",
+     "note": "The hiring manager this role reports to (previously a nuclear energy policy analyst at the Energy for Growth Hub). A brief note on her interest in nuclear policy and Hill education is the best approach.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Lisa Epifani",
+     "title": "Head of Policy, ClearPath (Washington, DC)",
+     "linkedin": "http://www.linkedin.com/in/lisa-epifani-1400b513",
+     "email": "epifani@clearpath.org",
+     "note": "Leads ClearPath's policy team (formerly Head of Government Affairs at X, the moonshot factory). Senior, so a short note works best.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_ClearPath_Nuclear.pdf",
+   "resume": "resumes/clearpath-nuclear-associate/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "freddiemac-mf-guide-compliance-analyst",
+   "date_found": "2026-11-01",
+   "posted": "2026-10-29",
+   "section": "picks",
+   "company": "Freddie Mac",
+   "role": "Multifamily Analyst – Guide & Compliance Team",
+   "location": "McLean, VA (DC area)",
+   "salary": "$73,000 – $109,000 + incentive",
+   "url": "https://freddiemac.wd5.myworkdayjobs.com/External/job/McLean-VA/Multifamily-Analyst---Guide---Compliance-Team_JR17738",
+   "fit": 6,
+   "category": "Housing finance / financial services policy & compliance (entry-level)",
+   "summary": "Freddie Mac Multifamily is hiring an Analyst for its Guide & Compliance team. The role drafts and edits Multifamily Seller/Servicer Guide bulletins and chapters (the rulebook lenders and servicers must follow), coordinates with Legal, Risk, Operations and the business, keeps forms and procedures current, and supports Seller/Servicer risk management. It asks for 0–2 years, strong writing and editing, and some knowledge of financial services or the secondary mortgage market. Non-exempt. Posted Oct 29.",
+   "fit_rationale": "One of the few truly entry-level (0–2 years) roles today, with a good salary range and a housing mission. Her H&K financial services and housing research, client-alert editing, and GUASFCU credit union experience map directly onto policy drafting and compliance. It's more policy-writing than advocacy, and it's in McLean rather than DC proper.",
+   "contacts": [
+    {
+     "name": "Nicole Ferrando",
+     "title": "Underwriting Sr. Analyst, TAH Underwriting, Freddie Mac Multifamily",
+     "linkedin": "https://www.linkedin.com/in/nicoletejares",
+     "email": "unknown",
+     "note": "Georgetown School of Continuing Studies (Master's in Real Estate) alum in Freddie Mac Multifamily who previously held Multifamily Credit Policy roles. She's a good Hoya contact for how policy and Guide changes work inside Multifamily.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Michael Morosi-Brown",
+     "title": "Senior Director, Multifamily Policy Surveillance & Strategy, Freddie Mac (DC area)",
+     "linkedin": "https://www.linkedin.com/in/michaelmorosi",
+     "email": "unknown",
+     "note": "Leads Multifamily policy surveillance and strategy (on LegiStorm, so he likely has a Hill background), which sits close to the Guide team. Senior, so a short note mentioning her House experience works best.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Freddie_Mac.pdf",
+   "resume": "resumes/freddiemac-mf-guide-compliance-analyst/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "betmgm-reg-analysis-analyst",
+   "date_found": "2026-11-01",
+   "posted": "2026-10-28",
+   "section": "picks",
+   "company": "BetMGM",
+   "role": "Compliance Analyst, Regulatory Analysis & Implementation",
+   "location": "Hybrid – New York, NY (also NJ, CT, PA)",
+   "salary": "$64,400 – $85,900",
+   "url": "https://betmgminc.wd5.myworkdayjobs.com/BetMGM/job/Hybrid-New-Jersey/Compliance-Analyst--Regulatory-Analysis---Implementation_JR100812",
+   "fit": 5,
+   "category": "Regulated industry (online gaming) regulatory analysis & compliance",
+   "summary": "BetMGM, the online sports betting and iGaming company, is hiring a Compliance Analyst for its Regulatory Analysis & Implementation team. The role analyzes new laws and regulations across states, turns them into implementation plans with owners and timelines, coordinates the company's comments on proposed bills and rules, and reviews controls, policies and documentation. It's hybrid with NYC as one of the listed locations, and asks for 2–3+ years (a stretch). Posted Oct 28.",
+   "fit_rationale": "This is a regulatory-analysis role in a heavily state-regulated industry, and the work of reading new rules across jurisdictions and coordinating comment letters matches her H&K regulatory tracking and NEFE multi-state bill research. It's compliance rather than policy, the low end of the salary range is under $75k, and the years ask is a stretch, so the fit is moderate.",
+   "contacts": [
+    {
+     "name": "Nelson Motta-Vivas",
+     "title": "Regulatory Compliance Manager, BetMGM (Jersey City, NJ)",
+     "linkedin": "http://www.linkedin.com/in/nelson-motta-vivas-456305122",
+     "email": "nelson.motta-vivas@betmgm.com",
+     "note": "Manager on BetMGM's regulatory compliance team who rose from compliance analyst, so he likely knows this team and role well. No Georgetown alum found on the team.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Jessica Panora",
+     "title": "Regulatory Compliance Analyst, BetMGM (New Jersey)",
+     "linkedin": "http://www.linkedin.com/in/jessica-p-66973a223",
+     "email": "jess.panora@betmgm.com",
+     "note": "A current regulatory compliance analyst, so she's a peer who can describe the day-to-day work.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Rhea Loney",
+     "title": "Chief Compliance Officer, BetMGM",
+     "linkedin": "https://www.linkedin.com/in/rhealoney",
+     "email": "unknown",
+     "note": "Head of compliance at BetMGM. Very senior, so only reach out with a short, specific note.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_BetMGM.pdf",
+   "resume": "resumes/betmgm-reg-analysis-analyst/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "eversource-reg-planning-analyst",
+   "date_found": "2026-11-01",
+   "posted": "2026-10-26",
+   "section": "picks",
+   "company": "Eversource Energy",
+   "role": "Analyst, Regulatory Planning (Hybrid)",
+   "location": "Westwood, MA (Boston area; also Berlin, CT) – hybrid, 3 days in office",
+   "salary": "$87,760 – $97,510 + incentive",
+   "url": "https://eversource.wd1.myworkdayjobs.com/ExternalSite/job/Berlin-CT/Analyst--Regulatory-Planning--Hybrid-Schedule-_R-032087",
+   "fit": 5,
+   "category": "Energy utility regulation (regulatory planning)",
+   "summary": "Eversource, New England's largest energy utility, is hiring an Analyst for Regulatory Planning. The role monitors regulatory dockets and orders in CT, MA and NH, coordinates filings and deadlines with Regulatory Affairs and Legal, quality-checks filing packages, and maintains CaseWorks/SharePoint trackers and repositories. It's hybrid (3 days in office) in Westwood, MA near Boston or Berlin, CT. It asks for 3+ years with utility or regulatory experience preferred, and doesn't offer sponsorship. Posted Oct 26.",
+   "fit_rationale": "A solid-paying energy regulatory job in the Boston area. Docket monitoring, deadline tracking and quality checks line up with how she tracks regulatory developments and manages open items at H&K. It's more process and operations than policy, and the 3+ years ask is a real stretch, so the fit is moderate.",
+   "contacts": [
+    {
+     "name": "Janet Palmer",
+     "title": "Manager – Regulatory Policy and Planning, Eversource Energy (Connecticut)",
+     "linkedin": "http://www.linkedin.com/in/janet-palmer-608b8511",
+     "email": "janet.palmer@eversource.com",
+     "note": "Manages regulatory policy and planning, likely this role's team or a close partner. No Georgetown alum found on the team.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Stephen Cochrane",
+     "title": "Analyst, Regulatory & Planning, Eversource Energy (Boston)",
+     "linkedin": "http://www.linkedin.com/in/stephen-cochrane-572306172",
+     "email": "stephen.cochrane@eversource.com",
+     "note": "A current analyst on the Regulatory & Planning team in Boston (previously in energy efficiency at Eversource). A peer who can describe the work and the team.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Eversource.pdf",
+   "resume": "resumes/eversource-reg-planning-analyst/AdelineBean_Resume.pdf"
+  },
   {
    "id": "betterment-compliance-associate-nyc",
    "date_found": "2026-10-31",
