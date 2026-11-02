@@ -1,6 +1,170 @@
 {
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "jobs": [
+  {
+   "id": "jagreen-natsec-research-associate",
+   "date_found": "2026-11-02",
+   "posted": "2026-11-02",
+   "section": "picks",
+   "company": "J.A. Green & Company",
+   "role": "National Security Research Associate/Analyst",
+   "location": "Washington, DC (Capitol Hill office, in person)",
+   "salary": "Not listed (\"highly competitive\" + bonus program, 5% 401(k) match)",
+   "url": "https://www.linkedin.com/jobs/view/4486437352",
+   "fit": 8,
+   "category": "Defense / national security government relations (lobbying firm)",
+   "summary": "J.A. Green & Company (JAG), a top-ranked DC government affairs and defense business development firm representing 80+ defense industrial base clients, is hiring a Research Associate/Analyst (title depends on experience) for its policy team. The role tracks legislation, appropriations and committee activity across the NDAA and defense funding cycle; drafts white papers, issue briefs, one-pagers, Hill testimony support and policy alerts; preps senior lobbyists and retired generals/flag officers for Hill meetings; and supports business development and events. No minimum years listed; a bachelor's degree, a writing sample and AI-tool fluency are required. Apply by emailing a cover letter, resume and writing sample (3 pages max) to jagadmin@jagreenco.com. Posted on LinkedIn Nov 2. Today's one defense pick.",
+   "fit_rationale": "This is the strongest match today. It's a true entry-level research role at a defense lobbying shop, and her H&K work supporting the National Security & Defense sector co-leads maps almost one-to-one onto it. Her House experience and memo writing cover the Hill side. Two Georgetown SFS alums are on the policy team. The main gap is that salary isn't listed, and she'll need a short defense-policy writing sample.",
+   "contacts": [
+    {
+     "name": "Kendal Walker",
+     "title": "Policy Analyst, J.A. Green & Company (Washington, DC)",
+     "linkedin": "https://www.linkedin.com/in/kwalk-sfs",
+     "email": "unknown",
+     "note": "Georgetown SFS alum (BSFS International Politics, 2023) who joined JAG's policy team in Nov 2025 and works on defense policy, appropriations and acquisition. He's a recent Hoya in the same kind of seat, so he's the best first note.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Michael Kaether",
+     "title": "Policy Analyst, J.A. Green & Company (Washington, DC)",
+     "linkedin": "https://www.linkedin.com/in/michael-kaether-b26139190",
+     "email": "unknown",
+     "note": "Georgetown SFS alum (M.A. German & European Studies, Transatlantic Security). He has been at JAG since April 2025 covering the defense industrial base, foreign military sales and the budget. Good for a quick chat on what the team looks for in writing samples.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Jeff Green",
+     "title": "Founder & President, J.A. Green & Company",
+     "linkedin": "unknown",
+     "email": "unknown (applications go to jagadmin@jagreenco.com)",
+     "note": "Founder and president of the firm. Senior, so reference him in the application or after talking with the analysts rather than cold-emailing first.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_JA_Green.pdf",
+   "resume": "resumes/jagreen-natsec-research-associate/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "beam-associate-dc",
+   "date_found": "2026-11-02",
+   "posted": "2026-11-02",
+   "section": "picks",
+   "company": "Beam Strategy Group",
+   "role": "Associate",
+   "location": "Washington, DC (hybrid in person)",
+   "salary": "Not listed",
+   "url": "https://www.linkedin.com/jobs/view/4485752308",
+   "fit": 7,
+   "category": "Public affairs / strategic communications startup (C-suite advisory)",
+   "summary": "Beam Strategy Group is a boutique strategy and advisory firm launched in 2026 as a sister company to Locust Street Group, led by CEO Hayley Zachary and CSO Tara Rush. It is hiring an Associate to work across corporate communications, public affairs and advocacy, stakeholder and community engagement, and executive counsel. The work includes daily media clips and monitoring, research summaries, meeting notes and agendas, first drafts of talking points, one-pagers, press releases and op-eds, event logistics and client support. It asks for up to 2 years of experience in strategy, consulting, public affairs, communications or campaigns. Posted on LinkedIn Nov 2.",
+   "fit_rationale": "This is an early-stage public affairs firm hiring at the right level (up to 2 years), so it's a startup-style GR/comms seat where she'd get real client work right away. Her H&K briefings, talking points and stakeholder mapping, House correspondence, and the two student organizations she co-founded all fit the role. Salary isn't listed, and the work leans more toward communications than policy.",
+   "contacts": [
+    {
+     "name": "Hayley Zachary",
+     "title": "CEO & Founder, Beam Strategy Group (Washington, DC)",
+     "linkedin": "https://www.linkedin.com/in/hayley-zachary-433b052",
+     "email": "unknown (firm inbox: contact@teambsg.com)",
+     "note": "Founded Beam in 2026 after leadership roles at Locust Street Group. At a firm this small she likely reviews Associate candidates herself, so a short, specific note works best.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Tara Rush",
+     "title": "Chief Strategy Officer, Beam Strategy Group",
+     "linkedin": "https://www.linkedin.com/in/tara-rush-5726b4a",
+     "email": "unknown",
+     "note": "Co-leads the firm with Hayley. Associates work directly with the senior team, so she's a natural second contact.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Leah Tucker Ferguson",
+     "title": "SVP, Beam Strategy Group",
+     "linkedin": "https://www.linkedin.com/in/leah-tucker-ferguson-9a131242",
+     "email": "unknown",
+     "note": "One of the firm's SVPs. Associates would staff her client work, so she's a good person to ask what day-to-day looks like.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Beam_Strategy_Group.pdf",
+   "resume": "resumes/beam-associate-dc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "ankura-univ-assoc-perf-improvement-nyc",
+   "date_found": "2026-11-02",
+   "posted": "2026-11-02",
+   "section": "picks",
+   "company": "Ankura",
+   "role": "University Associate, Performance Improvement",
+   "location": "New York, NY",
+   "salary": "$50,000 – $120,000 (posted range)",
+   "url": "https://ankura.wd5.myworkdayjobs.com/Ankura/job/New-York-NY/University-Associate--Performance-Improvement_R105128",
+   "fit": 5,
+   "category": "Consulting (new-grad program, 2027 grads)",
+   "summary": "Ankura, the global consulting and expert services firm (which also owns McLarty Associates), is hiring a full-time University Associate for its Performance Improvement practice in New York. It is open specifically to students graduating Dec 2026–June 2027 (0–1 years of experience). Associates work on client teams doing analysis, hypothesis-driven problem solving, client meetings and presentations, financial modeling and data work, and thought-leadership pieces across areas like pricing, sales and marketing effectiveness, procurement, operations and process improvement. Expect long hours and travel. It requires permanent US work authorization. Posted Nov 2.",
+   "fit_rationale": "This is a true new-grad consulting program with her exact graduation window, in NYC, and with no required major (Ankura's other University Associate tracks require finance or quant majors). It's the broadest-fit pick today: her research, synthesis and project tracking at H&K and the credit union's operations side translate well, but it's commercial operations consulting rather than policy, and it leans on Excel and financial modeling. The salary range is wide.",
+   "contacts": [
+    {
+     "name": "Ryan Francavilla",
+     "title": "Senior Associate, Turnaround & Restructuring, Ankura (New York)",
+     "linkedin": "https://www.linkedin.com/in/ryan-francavilla-a63632196",
+     "email": "unknown",
+     "note": "Georgetown McDonough alum (BS Finance and OPIM) at Ankura in New York. He's in a sister practice, not Performance Improvement, but is a good Hoya to ask about Ankura's new-grad experience and culture.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Christopher Ventry",
+     "title": "Managing Director, Performance Improvement, Ankura (New York)",
+     "linkedin": "https://www.linkedin.com/in/cventry",
+     "email": "unknown",
+     "note": "Senior leader of the Performance Improvement group in New York (retail and consumer focus). Senior, so a brief note after applying works best.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Sara Bakacs",
+     "title": "Director, Performance Improvement, Ankura (New York)",
+     "linkedin": "https://www.linkedin.com/in/sara-bakacs-22249a174",
+     "email": "unknown",
+     "note": "Director in the New York Performance Improvement practice (retail and manufacturing optimization). She's likely close to staffing University Associates.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Ankura.pdf",
+   "resume": "resumes/ankura-univ-assoc-perf-improvement-nyc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "teneo-media-analyst-nyc",
+   "date_found": "2026-11-02",
+   "posted": "2026-10-28",
+   "section": "picks",
+   "company": "Teneo",
+   "role": "Media Analyst (July 2027 start)",
+   "location": "New York, NY (hybrid, 3+ days in office)",
+   "salary": "$80,000 base + bonus",
+   "url": "https://www.teneo.com/careers/open-positions/8047208003?gh_jid=8047208003",
+   "fit": 6,
+   "category": "Strategic communications / CEO advisory (early-career program)",
+   "summary": "Teneo, the global CEO advisory firm (strategic communications, investor relations, management consulting, risk, and geopolitics and government affairs), is hiring Media Analysts for its New York office to start the first week of July 2027. Analysts sit on client teams monitoring traditional and social media, compiling daily media reports, flagging issues in real time, turning coverage into business insights and writing research briefings. After 12–18 months they move into Strategy & Communications, Management Consulting, Risk or Financial Advisory roles. It's for early-career candidates, with an interest in current events and capital markets preferred, and early mornings (6:00–6:30 a.m. starts) are required. Posted Oct 28.",
+   "fit_rationale": "The July 2027 start lines up exactly with her graduation, the $80k base clears her target, and the program is a structured on-ramp into a top advisory firm that also has a geopolitics and government affairs practice. Her H&K weekly briefings and client alerts are the core skill. A Georgetown alum went through this exact program and is still at Teneo. It's more communications than policy, and the early hours are real.",
+   "contacts": [
+    {
+     "name": "Rose Becker",
+     "title": "Associate, Teneo (New York)",
+     "linkedin": "https://www.linkedin.com/in/rose-becker-05157087",
+     "email": "unknown",
+     "note": "Georgetown alum (2019–2023) who started at Teneo as a Media Analyst in NYC (July 2023–Aug 2024) and is now an Associate there. She did this exact program, so she's the perfect first reach-out.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Helen Prince",
+     "title": "Strategy & Communications Intern (Summer 2026), Teneo (New York)",
+     "linkedin": "https://www.linkedin.com/in/helen-prince1",
+     "email": "unknown",
+     "note": "A current Georgetown student (Class of 2027) who interned in Teneo's NYC Strategy & Communications group this past summer. She's an easy peer to ask about the team and the recruiting timeline.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Teneo.pdf",
+   "resume": "resumes/teneo-media-analyst-nyc/AdelineBean_Resume.pdf"
+  },
   {
    "id": "hra-analyst-inclusive-cities",
    "date_found": "2026-11-01",
