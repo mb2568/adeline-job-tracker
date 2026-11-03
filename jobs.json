@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "jobs": [
   {
    "id": "jagreen-natsec-research-associate",
@@ -1864,6 +1864,178 @@
    "summary": "",
    "fit_rationale": "",
    "contacts": []
+  },
+  {
+   "id": "ahip-legal-reg-analyst-state-affairs",
+   "date_found": "2026-11-03",
+   "posted": "2026-11-03",
+   "section": "picks",
+   "company": "AHIP (America's Health Insurance Plans)",
+   "role": "Legal & Regulatory Analyst, State Affairs & Policy",
+   "location": "Washington, DC",
+   "salary": "Not listed",
+   "url": "https://www.linkedin.com/jobs/view/4486886837",
+   "fit": 7,
+   "category": "Health policy / state government affairs (national trade association)",
+   "summary": "AHIP, the national trade association for health insurers, is hiring a Legal & Regulatory Analyst for its State Affairs & Policy team. The analyst tracks state health insurance legislation and regulation across regions; drafts bill analyses, policy briefs, one-pagers and legislative/regulatory updates; supports the State Strategy Team with memos; helps prepare comment letters and talking points; keeps state tracking records (iTrak) and template libraries current; and works with the State Regional Directors and member companies. Requires a bachelor's degree; asks for 2–3 years in legislative/regulatory advocacy, policy development or research. Posted on LinkedIn Nov 3 (AHIP's own careers site blocks automated checks, so the LinkedIn link is used).",
+   "fit_rationale": "This is the closest match to her day-to-day H&K work: reading bills and rules, writing memos and one-pagers, and keeping trackers current, now focused on state health policy. Her NEFE multi-state bill tracking and House health care research back it up, and a Georgetown alum is an SVP at AHIP. The gap is that AHIP asks for 2–3 years of experience, so the cover letter leans on her state-tracking and memo-writing track record; it's worth applying anyway.",
+   "contacts": [
+    {
+     "name": "Lisa Shreve",
+     "title": "Senior Vice President, AHIP (Washington, DC)",
+     "linkedin": "https://www.linkedin.com/in/lisa-shreve-4022599",
+     "email": "unknown",
+     "note": "Georgetown alum (B.A. Political Science and MPP with a health policy focus) who has been at AHIP since 2006. A senior Hoya at the organization, so the best warm first note; ask who's best to talk to on the State Affairs team.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Sarah Lynn Geiger",
+     "title": "Regional Director, Northeast Region, State Affairs & Policy, AHIP (Philadelphia)",
+     "linkedin": "https://linkedin.com/in/sarah-lynn-geiger-536a1a11",
+     "email": "SGeiger@ahip.org (publicly listed in an Oct 2026 AHIP presentation)",
+     "note": "One of the State Regional Directors this analyst would support directly. A short note about state bill tracking would land well.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Kris Hathaway",
+     "title": "Vice President, State Affairs, AHIP",
+     "linkedin": "https://linkedin.com/in/kris-hathaway-1263437",
+     "email": "khathaway@ahip.org (publicly listed on an AHIP NAIC comment letter)",
+     "note": "Leads state affairs work and likely sits above the hiring manager. Alternate contact: David Kennedy, Deputy Director of State Policy (dkennedy@ahip.org, listed in the same AHIP deck).",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_AHIP.pdf",
+   "resume": "resumes/ahip-legal-reg-analyst-state-affairs/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "coinflow-product-ops-strategy-assoc-chicago",
+   "date_found": "2026-11-03",
+   "posted": "2026-11-03",
+   "section": "picks",
+   "company": "Coinflow",
+   "role": "Product Operations & Strategy Associate",
+   "location": "Chicago, IL",
+   "salary": "$85,000–$120,000 + equity",
+   "url": "https://jobs.ashbyhq.com/coinflow/d24a6d19-ae39-4625-85e5-f5a704e80883",
+   "fit": 6,
+   "category": "Fintech / crypto startup (stablecoin payments), compliance-adjacent operations",
+   "summary": "Coinflow is a stablecoin payments startup (a $25M Series A led by Pantera with Coinbase Ventures and others) hiring a Product Operations & Strategy Associate who reports to the Head of Product. The role owns partner and bank due-diligence questionnaires and the answer library behind them, keeps Linear organized, coordinates across product, risk and compliance, legal and sales, writes release notes and updates, and researches questions as memos. Asks for 1–3 years in operations, compliance operations or project coordination. Posted Nov 3 on Coinflow's Ashby board.",
+   "fit_rationale": "Bank and partner due diligence is mostly regulatory and compliance questions, so her H&K financial services and digital asset research plus her credit union SOP and identity-verification experience translate well. It's a startup fintech/crypto seat that pays well above her target. The stretch is that it's more product ops than policy, and it asks for some operations experience.",
+   "contacts": [
+    {
+     "name": "Nikolas \"Nick\" Vantzos",
+     "title": "Advisor (former Director of Business Development), Coinflow",
+     "linkedin": "https://www.linkedin.com/in/nickvantzos",
+     "email": "unknown",
+     "note": "Georgetown alum (M.S. Finance, 2015). He was Coinflow's Director of BD in 2025 and has advised the company since, so he can make a warm intro to the team.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Anurag Vuthunuri",
+     "title": "Head of Product, Coinflow",
+     "linkedin": "https://www.linkedin.com/in/anuragvuthunuri",
+     "email": "unknown",
+     "note": "The hiring manager this role reports to. A short note on how she'd run the DDQ answer library would stand out.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Jessica Potempa",
+     "title": "Recruiting Lead, Coinflow (Chicago)",
+     "linkedin": "https://www.linkedin.com/in/jessica-potempa-404572130",
+     "email": "unknown",
+     "note": "Runs recruiting. Good for a quick follow-up after applying.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Coinflow.pdf",
+   "resume": "resumes/coinflow-product-ops-strategy-assoc-chicago/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "yuzu-ops-assoc-legal-compliance-nyc",
+   "date_found": "2026-11-03",
+   "posted": "2026-11-01",
+   "section": "picks",
+   "company": "Yuzu",
+   "role": "Operations Associate (Legal & Compliance)",
+   "location": "New York, NY (in office 5 days)",
+   "salary": "$80,000–$110,000 + equity",
+   "url": "https://jobs.ashbyhq.com/yuzu-health/57168ff7-106e-4772-ac3e-196775131b44",
+   "fit": 6,
+   "category": "Health-tech startup, legal & regulatory compliance operations",
+   "summary": "Yuzu is a health plan administration (TPA) startup backed by General Catalyst and Anthropic, hiring an entry-level Operations Associate for Legal & Compliance. The work covers member appeals and No Surprises Act case review, research on HIPAA and mental health parity questions, recurring regulatory filings and reports, and working with engineering to build compliance into the product. The process is a 30-minute screen with Michal (Legal Ops) or Russell (co-founder), then a 2-hour take-home. Posted Nov 1 on Yuzu's Ashby board; labeled Entry Level.",
+   "fit_rationale": "It's a true entry-level legal/regulatory role at an AI-adjacent startup that pays above her target. Her H&K regulatory research and memo writing, her House casework (guiding people through disputes) and her credit union compliance procedures all line up with appeals and NSA case work. The main gaps are that it's health operations rather than policy and requires five days a week in the NYC office.",
+   "contacts": [
+    {
+     "name": "Michal Goldstein",
+     "title": "Legal Operations Architect, Yuzu (New York)",
+     "linkedin": "https://www.linkedin.com/in/michal-goldstein-6554431b0",
+     "email": "unknown",
+     "note": "One of the two people who run the first-round screen for this role, so the best first note.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Russell Pekala",
+     "title": "Co-founder & COO, Yuzu",
+     "linkedin": "https://www.linkedin.com/in/mathguy",
+     "email": "unknown",
+     "note": "Co-founder who also runs screens for this role.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Christina Joseph, MPH",
+     "title": "Legal Operations, Yuzu",
+     "linkedin": "https://www.linkedin.com/in/christina-joseph-mph-712719152",
+     "email": "unknown",
+     "note": "Already on the legal ops team. Good for asking what the day-to-day looks like.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Yuzu.pdf",
+   "resume": "resumes/yuzu-ops-assoc-legal-compliance-nyc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "pivot-energy-market-ops-assoc-denver",
+   "date_found": "2026-11-03",
+   "posted": "2026-10-26",
+   "section": "picks",
+   "company": "Pivot Energy",
+   "role": "Associate, Market Operations",
+   "location": "Denver, CO (also open to Chicago or Baltimore)",
+   "salary": "$75,000–$85,000",
+   "url": "https://jobs.lever.co/pivotenergy/6e32d60c-7b88-4564-a550-798602463717",
+   "fit": 6,
+   "category": "Energy (community solar & storage developer), program compliance / market operations",
+   "summary": "Pivot Energy, a Denver-based community solar and storage developer and owner, is hiring an Associate, Market Operations in its Revenue Operations group. The associate manages community solar subscriptions and utility relationships, makes sure each state program's rules and consumer protection requirements are met, reviews monthly utility data and revenue reporting, handles bill-credit invoicing, and resolves customer issues. Community solar experience is preferred, not required. Posted Oct 26 on Pivot's Lever board.",
+   "fit_rationale": "This is today's energy pick, in Denver. Applying state program rules and consumer protections maps onto her H&K energy/regulatory tracking, and the billing and reconciliation side matches her credit union teller work. Her time in a Colorado member's office (DeGette) helps too. It's operations rather than policy, but it's an entry door into clean energy, and Pivot's owner has a Georgetown alum on Pivot's board.",
+   "contacts": [
+    {
+     "name": "Sofia Galatas",
+     "title": "Vice President, Energy Capital Partners (Pivot Energy's owner); Pivot Energy board member",
+     "linkedin": "https://www.linkedin.com/in/sofia-galatas-04741855",
+     "email": "unknown",
+     "note": "Georgetown alum (McDonough BBA) who sits on Pivot's board through its owner, ECP. A warm Hoya connection, best as a polite note asking for an intro.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Elizabeth Devlin",
+     "title": "Director of Revenue Operations, Pivot Energy",
+     "linkedin": "https://www.linkedin.com/in/eadevlin",
+     "email": "unknown",
+     "note": "Leads the RevOps group this role sits in, so she's the likely hiring manager.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Nelago Msiska",
+     "title": "Senior Manager, Talent Acquisition, Pivot Energy (Denver)",
+     "linkedin": "https://www.linkedin.com/in/nelago-msiska-91b82017",
+     "email": "unknown",
+     "note": "Pivot's recruiter. Good for a follow-up after applying.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Pivot_Energy.pdf",
+   "resume": "resumes/pivot-energy-market-ops-assoc-denver/AdelineBean_Resume.pdf"
   }
  ],
  "previously_sent_removed": [
