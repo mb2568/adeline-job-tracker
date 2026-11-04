@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "jobs": [
   {
    "id": "jagreen-natsec-research-associate",
@@ -2036,6 +2036,127 @@
    ],
    "cover_letter": "letters/Adeline_Bean_Cover_Letter_Pivot_Energy.pdf",
    "resume": "resumes/pivot-energy-market-ops-assoc-denver/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "energydome-public-affairs-assoc-boston",
+   "date_found": "2026-11-04",
+   "posted": "2026-11-02",
+   "section": "picks",
+   "company": "Energy Dome",
+   "role": "Public Affairs Associate",
+   "location": "Boston, MA (on-site)",
+   "salary": "Not listed (bonus + stock options)",
+   "url": "https://www.linkedin.com/jobs/view/4484382748",
+   "fit": 6,
+   "category": "Energy startup (long-duration storage), government relations / public affairs",
+   "summary": "Energy Dome, an Italian-founded long-duration energy storage startup (the \"CO2 Battery\") that's building out its U.S. team, is hiring a Public Affairs Associate in Boston. The associate maps stakeholders across Congress, FERC, ISO/RTOs, state utility commissions and governors' offices, tracks legislation, rulemakings and market reforms, drafts briefings and memos, preps leadership for meetings, and supports coalition and trade-group work. It also involves building the team's contact and proceeding tracking systems. The posting asks for about 2–4 years of experience, so it's a stretch. Posted Nov 2 (LinkedIn; Energy Dome's careers site has no public job board).",
+   "fit_rationale": "This is today's top pick: an entry door into energy government relations at a startup, which is exactly the priority. The duties line up almost one-to-one with her H&K work (tracking energy legislation and agency proceedings, writing memos, prepping talking points, keeping stakeholder trackers) plus her DeGette energy and environment research. The 2–4 year ask is a stretch, but an early-stage U.S. team often hires for ability. A warm note to the policy director could make the difference.",
+   "contacts": [
+    {
+     "name": "Jessie Ciulla Shea",
+     "title": "Director of Policy & Market Strategy, Energy Dome (Cambridge, MA)",
+     "linkedin": "https://www.linkedin.com/in/jessieciullashea",
+     "email": "unknown",
+     "note": "Leads Energy Dome's U.S. policy work and has posted about its U.S. policy hiring, so she's the likely hiring manager or close to it. Best first note.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Melissa DeValles",
+     "title": "Senior Vice President, North America, Energy Dome",
+     "linkedin": "https://www.linkedin.com/in/melissa-devalles-1a41634",
+     "email": "unknown",
+     "note": "Runs Energy Dome's North American business, where this role sits. Good for a short, polite note after applying.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Katrina Grosek",
+     "title": "Human Resources Specialist, U.S. Corporate Functions, Energy Dome (Boulder, CO)",
+     "linkedin": "https://www.linkedin.com/in/katrina-grosek",
+     "email": "unknown",
+     "note": "U.S. HR contact, good for a follow-up on application status.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Energy_Dome.pdf",
+   "resume": "resumes/energydome-public-affairs-assoc-boston/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "xai-xmoney-kyc-analyst-nyc",
+   "date_found": "2026-11-04",
+   "posted": "2026-10-30",
+   "section": "picks",
+   "company": "xAI (X Money)",
+   "role": "KYC Analyst, X Money Compliance",
+   "location": "New York, NY or Palo Alto, CA (on-site)",
+   "salary": "$100,000–$135,000 + equity",
+   "url": "https://job-boards.greenhouse.io/xai/jobs/5279620007",
+   "fit": 6,
+   "category": "Fintech regulatory compliance (KYC / sanctions)",
+   "summary": "xAI's X Money team, which is building payments inside the X app, is hiring a KYC Analyst in New York or Palo Alto. The analyst does first-line KYC and sanctions reviews: resolving identity mismatches and OFAC/PEP screening alerts, doing enhanced due diligence on higher-risk customers, running KYB and beneficial-ownership checks on businesses, and documenting decisions. They also help update procedures and support bank-partner and regulator requests. The posting asks for 1+ year in KYC/AML but explicitly says entry-level candidates with strong analytical skills are welcome. ITAR rules mean the role requires U.S. person status. Posted Oct 30 on xAI's Greenhouse board.",
+   "fit_rationale": "This is a well-paid way into financial regulatory compliance at a high-profile company, and the posting says it's open to entry-level candidates. Her credit union job verifying identity under written procedures and escalating unusual activity is real front-line KYC experience. Her H&K research on banking, payments and AML regulation covers the policy side. It's a compliance role rather than policy, but it builds on her credit union angle and the pay is strong.",
+   "contacts": [
+    {
+     "name": "C. Rob DeCampos, CAMS",
+     "title": "Chief Compliance Officer & Head of Payments Compliance, X Money (xAI)",
+     "linkedin": "https://www.linkedin.com/in/robdecamposcams",
+     "email": "unknown",
+     "note": "Heads the compliance team this role sits on and posts X Money compliance openings himself.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Raisa Cohen, CAMS, CAFCA",
+     "title": "Senior Program Manager, AML & Sanctions Product Compliance, X Payments / X",
+     "linkedin": "https://www.linkedin.com/in/raisa-cohen-cams-cafca",
+     "email": "unknown",
+     "note": "Leads AML and sanctions compliance for X's payment products and has posted about BSA/AML hiring. A good peer-level contact.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Lucia Marin Cano",
+     "title": "X Money Compliance (financial crime), xAI",
+     "linkedin": "https://www.linkedin.com/in/lucia-marin-cano-mba",
+     "email": "unknown",
+     "note": "Regularly posts X Money compliance openings (KYC, AML investigators, fraud analysts) and invites candidates to DM her. Her exact title isn't confirmed.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_xAI.pdf",
+   "resume": "resumes/xai-xmoney-kyc-analyst-nyc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "capitalone-compliance-advisory-spec-ii-ethics",
+   "date_found": "2026-11-04",
+   "posted": "2026-10-25",
+   "section": "picks",
+   "company": "Capital One",
+   "role": "Compliance Advisory Specialist II (Ethics Office – Conflicts of Interest)",
+   "location": "McLean, VA (also Richmond, VA)",
+   "salary": "$96,500–$110,100 (McLean)",
+   "url": "https://capitalone.wd12.myworkdayjobs.com/Capital_One/job/McLean-VA/Compliance-Advisory-Specialist-II_R1004328-1",
+   "fit": 5,
+   "category": "Corporate ethics & compliance (financial services)",
+   "summary": "Capital One's Ethics Office is hiring a Compliance Advisory Specialist II focused on conflicts of interest, based at its McLean HQ (just outside DC). The specialist takes in and triages Ethics Line matters, analyzes conflicts of interest, reviews gifts and entertainment pre-approval requests, tracks program metrics, and helps improve the office's workflows and technology. It asks for at least 1 year in ethics, compliance, legal or government regulatory programs. Posted about Oct 25 on Capital One's Workday board.",
+   "fit_rationale": "This role pays well near DC and draws on her legal and regulatory research. Her H&K work applying rules (including lobbying and ethics rules) to specific facts and flagging judgment calls is the core skill here. Working under House ethics and gift rules and following compliance controls at the credit union add to that. The 1-year requirement is a slight stretch that her internships arguably meet. A Georgetown alum (Hoya undergrad and Law) is a senior leader there.",
+   "contacts": [
+    {
+     "name": "Joseph Mazias",
+     "title": "Managing Vice President, Head of Retail Bank Operations, Capital One (formerly in Capital One compliance)",
+     "linkedin": "https://www.linkedin.com/in/joseph-mazias-03042011b",
+     "email": "unknown",
+     "note": "Georgetown alum (McDonough BSBA and Georgetown Law JD) who spent years in Capital One compliance. A warm Hoya note asking for advice or an intro to the Ethics Office.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "James Walsh",
+     "title": "Chief Ethics Officer, Capital One",
+     "linkedin": "https://www.linkedin.com/in/james-walsh-b6764a7a",
+     "email": "unknown",
+     "note": "Leads the Ethics Office this role sits in. Best approached after applying, with a brief, respectful note.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Capital_One.pdf",
+   "resume": "resumes/capitalone-compliance-advisory-spec-ii-ethics/AdelineBean_Resume.pdf"
   }
  ],
  "previously_sent_removed": [
