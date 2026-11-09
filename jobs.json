@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-09",
  "jobs": [
   {
    "id": "jagreen-natsec-research-associate",
@@ -2329,6 +2329,49 @@
    ],
    "cover_letter": "letters/Adeline_Bean_Cover_Letter_Climate_Leadership_Council.pdf",
    "resume": "resumes/clc-senior-gr-associate-dc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "harley-davidson-government-affairs-associate-dc",
+   "date_found": "2026-11-09",
+   "posted": "2026-11-05",
+   "section": "picks",
+   "company": "Harley-Davidson",
+   "role": "Government Affairs Associate (US-DC)",
+   "location": "Washington, DC (remote, but must live in the DC area for in-person meetings and events)",
+   "salary": "$65,800–$98,700 (national range) + annual bonus",
+   "url": "https://jobs.harley-davidson.com/job/Remote-Government-Affairs-Associate-%28US-DC%29-DC-20001/1448319700/",
+   "fit": 8,
+   "category": "Corporate government affairs (manufacturing, trade, vehicle regulation)",
+   "summary": "Harley-Davidson's Washington government affairs team is hiring a full-time Government Affairs Associate (req. 63027). The associate monitors legislative and regulatory developments and tracks emerging issues, does policy research and turns it into clear, actionable takeaways, develops research and content for advocacy campaigns, supports the subject-matter experts who lead the company's priorities, and provides administrative support to the team's governance bodies. The team's issues include trade and tariffs, vehicle and emissions regulation, tax, manufacturing and electric vehicles. A bachelor's in public policy, political science, communications or a related field is preferred; third-party boards tag it as new grad (0–1 years). The job is remote, but you have to live in the DC area for in-person meetings and events, travel is 0–10%, and relocation help is offered. Applicants must already be authorized to work in the US (no visa sponsorship). Posted Nov 5 on Harley-Davidson's careers site.",
+   "fit_rationale": "This is a true entry-level government affairs job in DC with a range that tops $75k. The work (tracking policy, flagging emerging issues, research and advocacy content, supporting senior experts) is what she already does at H&K. Her H&K coverage of trade, manufacturing, supply chains and transportation, her DeGette energy, environment and consumer protection research, and her credit union marketing work all fit a consumer manufacturing brand. As treasurer and co-founder of two student organizations, she can also speak to the governance-support part of the role. The team is small and senior, and no Georgetown alumni turned up, so a short, well-researched note to the hiring leads after applying is the best move.",
+   "contacts": [
+    {
+     "name": "Dylan Riddle",
+     "title": "Head of Government & Corporate Affairs, Harley-Davidson (Washington, DC)",
+     "linkedin": "https://www.linkedin.com/in/dylan-riddle-0894a880",
+     "email": "unknown",
+     "note": "Joined Harley-Davidson in Aug 2026 after five and a half years at Deutsche Bank and leads government and corporate affairs. He's probably building out the DC team, so he's likely the hiring decision maker. Send a brief note after you apply.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Guido Zucconi",
+     "title": "Government Affairs Manager, Harley-Davidson (Washington, DC area)",
+     "linkedin": "https://www.linkedin.com/in/gzucconi",
+     "email": "unknown",
+     "note": "Has handled federal and state advocacy at Harley-Davidson since Oct 2023, a registered lobbyist and former congressional aide, per LinkedIn and LegiStorm. He's the most likely day-to-day manager or teammate for this role, and a good person to ask about the issue portfolio.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Jane Stevenson",
+     "title": "Global Director, Government Affairs, Harley-Davidson",
+     "linkedin": "https://www.linkedin.com/in/jane-stevenson-500",
+     "email": "unknown",
+     "note": "Has led Harley-Davidson's global government affairs (North America, APAC, LatAm, EMEA) since Oct 2022 and has posted the team's openings on LinkedIn before. A good senior contact to follow and message after you apply.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Harley_Davidson.pdf",
+   "resume": "resumes/harley-davidson-government-affairs-associate-dc/AdelineBean_Resume.pdf"
   }
  ],
  "previously_sent_removed": [
