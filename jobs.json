@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "jobs": [
   {
    "id": "jagreen-natsec-research-associate",
@@ -2372,6 +2372,49 @@
    ],
    "cover_letter": "letters/Adeline_Bean_Cover_Letter_Harley_Davidson.pdf",
    "resume": "resumes/harley-davidson-government-affairs-associate-dc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "ramp-legal-privacy-ops-associate-nyc",
+   "date_found": "2026-11-10",
+   "posted": "2026-11-09",
+   "section": "picks",
+   "company": "Ramp",
+   "role": "Legal & Privacy Operations Associate",
+   "location": "New York, NY (HQ, hybrid); San Francisco also listed",
+   "salary": "$110,000–$155,000 + equity",
+   "url": "https://jobs.ashbyhq.com/ramp/31bd9e9e-102f-4051-abc1-22cdd7d9617a",
+   "fit": 7,
+   "category": "Fintech startup legal & privacy operations (AI workflows, privacy program, governance)",
+   "summary": "Ramp is a fast-growing NYC fintech (corporate cards and spend management for 85,000+ businesses). Its Legal team is hiring a Legal & Privacy Operations Associate to help the team scale. The associate supports legal technology and AI workflow rollouts (training, documentation, vendor follow-up), builds and maintains privacy program inventories and evidence with Product, Security, IT and Marketing (vendor records, AI-system use cases, data flows, records of processing), supports data subject request response and automation, administers legal systems such as Ironclad and the legal helpdesk, and runs corporate governance, equity and policy/control refresh work. The posting asks for 1–3 years in legal operations, privacy operations, legal assistant/paralegal or a comparable role, plus experience building AI agents and workflows. CCPA/GDPR knowledge, coding and Ironclad experience are nice-to-haves. Posted Nov 9 on Ramp's Ashby board.",
+   "fit_rationale": "A stretch on years, but a real early-career legal-team role at a top fintech startup with pay well above target. Her H&K work is the closest match: law-firm request triage, iManage filing, matter and deadline trackers, and technology, privacy and financial-services policy research. The credit union shows she follows controls and handles sensitive member data, and she already uses AI tools daily. The gaps are the 1–3 years of legal/privacy ops and hands-on AI-agent building, so the letter frames her as someone who builds simple systems and wants to automate legal work. It's a good bridge if she leans toward law school. Two Georgetown alumni at Ramp can give her a warm intro, and the Head of Legal Ops & AI is the likely hiring manager.",
+   "contacts": [
+    {
+     "name": "Masa Masri",
+     "title": "Growth, Ramp (New York)",
+     "linkedin": "https://www.linkedin.com/in/masa-masri1",
+     "email": "unknown",
+     "note": "Georgetown BA in Government and Art History (2024) who has been at Ramp in NYC since Sep 2024. A recent Hoya close to your stage who can tell you about Ramp's culture and might refer you internally. Ramp's posting says referred candidates should have the referrer apply for them.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Tricia Correia",
+     "title": "Director, People & Workplace Operations, Ramp (New York)",
+     "linkedin": "https://www.linkedin.com/in/triciadjc",
+     "email": "unknown",
+     "note": "Georgetown BSBA, leading People and Workplace Ops at Ramp since Apr 2026 (Senior Manager, People & Talent Ops before that). She's a senior Hoya on the operations side who knows how Ramp hires. A short alum-to-alum note asking for 10 minutes or a referral makes sense.",
+     "georgetown_alum": true
+    },
+    {
+     "name": "Joyce Tsai",
+     "title": "Head of Legal Ops & AI, Ramp (New York)",
+     "linkedin": "https://www.linkedin.com/in/joycectsai",
+     "email": "unknown",
+     "note": "Has led Ramp's legal operations and AI work since Mar 2026, after BizOps at Eudia and operations and legal ops roles at Palantir. This role almost certainly reports to her. Apply first, then send a brief note about how you'd build AI workflows for the legal team.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Ramp.pdf",
+   "resume": "resumes/ramp-legal-privacy-ops-associate-nyc/AdelineBean_Resume.pdf"
   }
  ],
  "previously_sent_removed": [
