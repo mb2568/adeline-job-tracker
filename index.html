@@ -24,6 +24,7 @@ tr.group td{background:#fafbfc;font-weight:600;color:var(--gray);font-size:12px;
 .card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px}.card h4{margin:0 0 2px;font-size:14px}.card .t{color:var(--gray);font-size:12px;margin-bottom:6px}
 .card a{color:#1a56b0;text-decoration:none;word-break:break-all}.card .n{font-size:12px;color:#444;margin-top:6px}
 .alum{display:inline-block;background:#041e42;color:#fff;font-size:11px;border-radius:10px;padding:1px 8px;margin-left:4px}
+.you{display:inline-block;background:var(--accent);color:#fff;font-size:11px;border-radius:10px;padding:1px 8px;margin-left:6px;white-space:nowrap}
 textarea{width:100%;min-height:90px;border:1px solid var(--line);border-radius:6px;padding:8px;font:inherit}
 .links a{display:inline-block;margin:4px 8px 4px 0;padding:6px 10px;border-radius:6px;background:var(--navy);color:#fff;text-decoration:none}
 h3{margin:12px 0 4px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--gray)}
@@ -32,6 +33,14 @@ footer{color:var(--gray);font-size:12px;margin:18px 0}
 .pin{padding:4px 6px;border:1px solid var(--line);border-radius:6px;font:inherit;width:100%}
 td a{color:#1a56b0;text-decoration:none}
 .hb{padding:3px 7px;font-size:12px;margin:3px 3px 0 0}.hidrow{opacity:.55}
+.modal-bg{position:fixed;inset:0;background:rgba(4,30,66,.45);display:flex;align-items:center;justify-content:center;z-index:40;padding:16px}
+.modal{background:#fff;border-radius:10px;padding:20px 22px;max-width:500px;width:100%;box-shadow:0 10px 36px rgba(0,0,0,.22);max-height:92vh;overflow:auto}
+.modal h2{margin:0 0 6px;font-size:18px}.modal .hint{color:var(--gray);font-size:12px;margin:0 0 10px}
+.modal label{display:block;font-size:12px;font-weight:600;margin:8px 0 3px;color:#3b4252}
+.modal input,.modal textarea{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:6px;font:inherit;background:#fff}
+.modal textarea{min-height:70px}
+.modal .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;justify-content:flex-end}
+.err{color:#8a1f1f;font-size:12px;margin-top:8px}
 </style></head><body>
 <header><h1>Adeline's Job Tracker</h1><p>Daily picks, newest first. Click a row to open details and contacts. Jobs and the Outreach / People tab save your status and notes in this browser.</p></header>
 <div class="wrap">
@@ -43,6 +52,7 @@ td a{color:#1a56b0;text-decoration:none}
 <select id="fstatus"><option value="">All statuses</option></select>
 <select id="fcat"><option value="">All categories</option></select>
 <select id="fmin"><option value="0">Any fit</option><option value="7">Fit ≥ 7</option><option value="8">Fit ≥ 8</option><option value="9">Fit ≥ 9</option></select>
+<button id="addJob" class="primary">Add a job I applied to</button>
 <button id="jhid">Show hidden</button><button id="exp">Export my progress</button><button id="imp">Import</button><input type="file" id="file" accept=".json" hidden>
 </div>
 <table><thead><tr>
@@ -55,60 +65,152 @@ td a{color:#1a56b0;text-decoration:none}
 <label style="display:flex;gap:4px;align-items:center"><input type="checkbox" id="palum" style="flex:none;min-width:0">Georgetown alums only</label><button id="phid">Show hidden</button><button id="pexp">Export my progress</button><button id="pimp">Import</button></div>
 <table><thead><tr><th data-p="name">Name</th><th data-p="title" class="hide-sm">Title</th><th data-p="company">Company</th><th data-p="roles">Related role(s)</th><th data-p="alum">GU alum</th><th>LinkedIn / Email</th><th data-p="status">Status</th><th data-p="touch">Last touch</th><th>Notes</th></tr></thead><tbody id="ptb"></tbody></table>
 </div>
-<footer>Each day's picks are added to <code>jobs.json</code>. Progress is stored in this browser's localStorage. Use Export to back it up or move it to another device.</footer>
+<footer>Each day's picks are added to <code>jobs.json</code>. Progress is stored in this browser's localStorage. Jobs you add yourself stay on this device until you use <b>Send to sync</b>, which emails them to be added permanently. Use Export to back up your progress or move it to another device.</footer>
+</div>
+<div id="addModal" class="modal-bg" hidden>
+<div class="modal" role="dialog" aria-labelledby="addTitle">
+<h2 id="addTitle">Add a job I applied to</h2>
+<p class="hint">Saved on this device right away, and tagged “Added by you.” Use Send to sync so it can be added permanently to the shared tracker.</p>
+<label for="ajCo">Company *</label><input id="ajCo" autocomplete="organization">
+<label for="ajRole">Role title *</label><input id="ajRole">
+<label for="ajUrl">Link to posting</label><input id="ajUrl" type="url" placeholder="https://">
+<label for="ajLoc">Location</label><input id="ajLoc" placeholder="City or remote">
+<label for="ajDate">Date applied</label><input id="ajDate" type="date">
+<label for="ajNotes">Notes</label><textarea id="ajNotes" placeholder="Recruiter, referral, deadline…"></textarea>
+<p class="err" id="ajErr" hidden></p>
+<div class="actions">
+<button type="button" id="ajCancel">Cancel</button>
+<button type="button" id="ajSave">Save on this device</button>
+<button type="button" id="ajSync" class="primary">Save and send to sync</button>
+</div>
+</div>
 </div>
 <script>
 const STATUSES=["Not applied","Applied","Interviewing","Offer","Rejected","Not interested"];
-const KEY="adeline-tracker-v1";let jobs=[],st=JSON.parse(localStorage.getItem(KEY)||"{}"),sortK="date_found",asc=false,open=null;
+const KEY="adeline-tracker-v1";let jobs=[],coStatus={},st=JSON.parse(localStorage.getItem(KEY)||"{}"),sortK="date_found",asc=false,open=null;
 const save=()=>localStorage.setItem(KEY,JSON.stringify(st));let DEF={};const S=id=>st[id]||(st[id]={status:DEF[id]||"Not applied",notes:""});
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-let showHJ=false,showHP=false;const jHidden=id=>{const s=st[id];return !!s&&(s.hidden===true||(s.status==="Not interested"&&s.hidden!==false))};
+let showHJ=false,showHP=false;
+const selfList=()=>st.__selfJobs||(st.__selfJobs=[]);
+const coKey=n=>String(n||"").trim().toLowerCase();
+const normUrl=u=>{if(!u)return"";try{const x=new URL(u);return(x.origin+x.pathname).replace(/\/$/,"").toLowerCase()}catch(e){return String(u).trim().toLowerCase().replace(/\/$/,"")}};
+const sameJob=(a,b)=>{const ua=normUrl(a.url),ub=normUrl(b.url);if(ua&&ub&&ua===ub)return true;const ca=coKey(a.company),cb=coKey(b.company);return!!(ca&&cb&&ca===cb&&String(a.role||"").trim().toLowerCase()===String(b.role||"").trim().toLowerCase())};
+const getCoStatus=name=>{if(!name)return null;if(coStatus[name])return coStatus[name];const k=coKey(name);for(const[n,s]of Object.entries(coStatus||{}))if(coKey(n)===k)return s;return null};
+const statusClosed=s=>s==="Not interested"||s==="Rejected";
+function allJobs(){return jobs.concat(selfList().filter(s=>!jobs.some(j=>sameJob(j,s))))}
+const jHidden=id=>{const s=st[id];return!!s&&(s.hidden===true||(s.status==="Not interested"&&s.hidden!==false))};
 const fitc=f=>f>=8?"f-hi":f>=6?"f-md":"f-lo";
-fetch("jobs.json?"+Date.now()).then(r=>r.json()).then(d=>{jobs=d.jobs;jobs.forEach(j=>{if(j.default_status)DEF[j.id]=j.default_status});
- STATUSES.forEach(s=>fstatus.add(new Option(s,s)));[...new Set(jobs.map(j=>j.category))].forEach(c=>fcat.add(new Option(c,c)));render();buildPeople();if(location.hash==="#people")tab("people");});
+function companyClosed(name){
+  const cs=getCoStatus(name);
+  if(cs&&statusClosed(cs.status||cs))return true;
+  return allJobs().some(j=>coKey(j.company)===coKey(name)&&statusClosed(S(j.id).status));
+}
+function migrateSelfJobs(){
+  const keep=[];
+  for(const s of selfList()){
+    const match=jobs.find(j=>sameJob(j,s));
+    if(match){
+      const ls=st[s.id];
+      if(ls){const dest=S(match.id);if(ls.notes&&!dest.notes)dest.notes=ls.notes;if(ls.status&&ls.status!=="Not applied")dest.status=ls.status;if(ls.hidden!=null&&dest.hidden==null)dest.hidden=ls.hidden}
+    }else keep.push(s);
+  }
+  st.__selfJobs=keep;save();
+}
+function fillCats(){
+  const cur=fcat.value;
+  [...fcat.querySelectorAll("option")].forEach((o,i)=>{if(i)o.remove()});
+  [...new Set(allJobs().map(j=>j.category).filter(Boolean))].forEach(c=>fcat.add(new Option(c,c)));
+  if(cur&&[...fcat.options].some(o=>o.value===cur))fcat.value=cur;
+}
+fetch("jobs.json?"+Date.now()).then(r=>r.json()).then(d=>{jobs=d.jobs;coStatus=d.company_status||{};
+ jobs.forEach(j=>{if(j.default_status)DEF[j.id]=j.default_status});
+ migrateSelfJobs();
+ selfList().forEach(j=>{if(j.default_status)DEF[j.id]=j.default_status});
+ STATUSES.forEach(s=>fstatus.add(new Option(s,s)));fillCats();render();buildPeople();if(location.hash==="#people")tab("people");});
 function card(c){const li=c.linkedin&&c.linkedin!=="unknown"?`<a href="${esc(c.linkedin)}" target="_blank">LinkedIn ↗</a>`:"LinkedIn: unknown";
  const em=c.email&&!c.email.startsWith("unknown")?`<a href="mailto:${esc(c.email.split(" ")[0])}">${esc(c.email)}</a>`:"Email: unknown";
  return `<div class="card"><h4>${esc(c.name)}${c.georgetown_alum?'<span class="alum">Georgetown alum</span>':''}</h4><div class="t">${esc(c.title)}</div>${li}<br>${em}${c.note?`<div class="n">${esc(c.note)}</div>`:""}</div>`}
-function render(){const q=document.getElementById("q").value.toLowerCase(),fs=fstatus.value,fc=fcat.value,fm=+fmin.value;
- let L=jobs.filter(j=>(showHJ?jHidden(j.id):!jHidden(j.id))&&(!q||[j.company,j.role,j.location].join(" ").toLowerCase().includes(q))&&(!fs||S(j.id).status===fs)&&(!fc||j.category===fc)&&(fm===0||(j.fit||0)>=fm));
+function groupLabel(j){
+  if(j.section==="applied"){
+    if(j.date_found==="pre-tracker")return"Already applied (before the tracker)";
+    const d=j.date_found?new Date(j.date_found+"T12:00").toDateString():"";
+    return(j.added_by_you?"Added by you — applied ":"Applied ")+d;
+  }
+  return"Picks found "+new Date(j.date_found+"T12:00").toDateString();
+}
+function render(){const q=document.getElementById("q").value.toLowerCase(),fs=fstatus.value,fc=fcat.value,fm=+fmin.value,list=allJobs();
+ let L=list.filter(j=>(showHJ?jHidden(j.id):!jHidden(j.id))&&(!q||[j.company,j.role,j.location].join(" ").toLowerCase().includes(q))&&(!fs||S(j.id).status===fs)&&(!fc||j.category===fc)&&(fm===0||(j.fit||0)>=fm));
  L.sort((a,b)=>{let x=sortK==="status"?S(a.id).status:a[sortK],y=sortK==="status"?S(b.id).status:b[sortK];let r=x>y?1:x<y?-1:0;if(!r)return (b.fit||0)-(a.fit||0);return asc?r:-r});
  let h="",last=null;if(sortK==="date_found")L=[...L.filter(j=>j.section!=="applied"),...L.filter(j=>j.section==="applied")];
- for(const j of L){if(sortK==="date_found"&&j.date_found!==last){last=j.date_found;h+=`<tr class="group"><td colspan="8">${last==="pre-tracker"?"Already applied (before the tracker)":"Picks found "+new Date(last+"T12:00").toDateString()}</td></tr>`}
-  const s=S(j.id);h+=`<tr class="row${showHJ?" hidrow":""}" data-id="${j.id}"><td style="white-space:nowrap">${j.date_found}</td><td class="hide-sm" style="white-space:nowrap">${esc(j.posted||"")}</td><td><b>${esc(j.company)}</b></td><td>${esc(j.role)}</td><td class="hide-sm">${esc(j.location)}</td><td class="hide-sm">${esc(j.salary)}</td><td>${j.fit?`<span class="fit ${fitc(j.fit)}">${j.fit}/10</span>`:"—"}</td>
+ for(const j of L){if(sortK==="date_found"){const lab=groupLabel(j);if(lab!==last){last=lab;h+=`<tr class="group"><td colspan="8">${lab}</td></tr>`}}
+  const s=S(j.id),you=!!j.added_by_you;h+=`<tr class="row${showHJ?" hidrow":""}" data-id="${j.id}"><td style="white-space:nowrap">${j.date_found}</td><td class="hide-sm" style="white-space:nowrap">${esc(j.posted||"")}</td><td><b>${esc(j.company)}</b>${you?'<span class="you">Added by you</span>':""}</td><td>${esc(j.role)}</td><td class="hide-sm">${esc(j.location)}</td><td class="hide-sm">${esc(j.salary)}</td><td>${j.fit?`<span class="fit ${fitc(j.fit)}">${j.fit}/10</span>`:"—"}</td>
   <td><select class="status" data-id="${j.id}">${STATUSES.map(x=>`<option ${x===s.status?"selected":""}>${x}</option>`).join("")}</select><br>${showHJ?`<button class="hb" data-unhide="${j.id}">Unhide</button>`:`<button class="hb" data-hide="${j.id}" title="Hide this job">Hide</button><button class="hb" data-hideco="${esc(j.company)}" title="Hide every job currently listed from this company">Hide company</button>`}</td></tr>`;
-  if(open===j.id)h+=`<tr class="detail"><td colspan="8"><div class="grid"><div>${j.summary?`<h3>${j.section==="applied"?"Notes":"Role summary"}</h3><p>${esc(j.summary)}</p>`:""}${j.fit?`<h3>Fit: ${j.fit}/10</h3><p>${esc(j.fit_rationale)}</p>`:""}
+  if(open===j.id){const cons=j.contacts||[];h+=`<tr class="detail"><td colspan="8"><div class="grid"><div>${j.summary?`<h3>${j.section==="applied"?"Notes":"Role summary"}</h3><p>${esc(j.summary)}</p>`:""}${j.fit?`<h3>Fit: ${j.fit}/10</h3><p>${esc(j.fit_rationale)}</p>`:""}
   <div class="links">${j.url?`<a href="${esc(j.url)}" target="_blank">Open posting ↗</a>`:""}${j.cover_letter?`<a href="${esc(j.cover_letter)}" target="_blank">Cover letter (PDF)</a>`:""}${j.resume?`<a href="${esc(j.resume)}" target="_blank">Tailored resume (PDF)</a>`:""}</div>
-  ${j.contacts.length?`<h3>Points of contact</h3><div class="cards">${j.contacts.map(card).join("")}</div>`:""}</div>
-  <div><h3>My notes</h3><textarea data-id="${j.id}" placeholder="Who I reached out to, deadlines, interview notes…">${esc(s.notes)}</textarea><p style="color:#63666a;font-size:12px">Saved automatically. Category: ${esc(j.category)}</p></div></div></td></tr>`}
- tb.innerHTML=h||`<tr><td colspan="8">${showHJ?"No hidden jobs.":"No jobs match these filters."}</td></tr>`;jhid.textContent=showHJ?"Back to active jobs":`Show hidden (${jobs.filter(j=>jHidden(j.id)).length})`;
- const V=jobs.filter(j=>!jHidden(j.id)),c=STATUSES.map(x=>[x,V.filter(j=>S(j.id).status===x).length]);
+  ${cons.length?`<h3>Points of contact</h3><div class="cards">${cons.map(card).join("")}</div>`:""}</div>
+  <div><h3>My notes</h3><textarea data-id="${j.id}" placeholder="Who I reached out to, deadlines, interview notes…">${esc(s.notes)}</textarea><p style="color:#63666a;font-size:12px">Saved automatically.${j.category?` Category: ${esc(j.category)}`:""}${you?" This job was added by you on this device.":""}</p></div></div></td></tr>`}}
+ tb.innerHTML=h||`<tr><td colspan="8">${showHJ?"No hidden jobs.":"No jobs match these filters."}</td></tr>`;jhid.textContent=showHJ?"Back to active jobs":`Show hidden (${list.filter(j=>jHidden(j.id)).length})`;
+ const V=list.filter(j=>!jHidden(j.id)),c=STATUSES.map(x=>[x,V.filter(j=>S(j.id).status===x).length]);
  stats.innerHTML=`<div class="stat"><b>${V.length}</b>jobs tracked</div>`+c.filter(x=>x[1]).map(([x,n])=>`<div class="stat"><b>${n}</b>${x}</div>`).join("")}
 tb.addEventListener("click",e=>{const b=e.target.closest("button.hb");if(b){hideJobs(b);return}if(e.target.closest("select,textarea,a,.detail"))return;const r=e.target.closest("tr.row");if(r){open=open===r.dataset.id?null:r.dataset.id;render()}});
-tb.addEventListener("change",e=>{if(e.target.matches("select.status")){S(e.target.dataset.id).status=e.target.value;if(e.target.value==="Not interested")delete S(e.target.dataset.id).hidden;save();render()}});
+tb.addEventListener("change",e=>{if(e.target.matches("select.status")){S(e.target.dataset.id).status=e.target.value;if(e.target.value==="Not interested")delete S(e.target.dataset.id).hidden;save();render();if(people.length)prender()}});
 tb.addEventListener("input",e=>{if(e.target.matches("textarea")){S(e.target.dataset.id).notes=e.target.value;save()}});
-document.querySelectorAll("th").forEach(th=>th.onclick=()=>{const k=th.dataset.k;asc=sortK===k?!asc:k!=="date_found"&&k!=="fit";sortK=k;
- document.querySelectorAll("th").forEach(t=>t.textContent=t.textContent.replace(/ [▴▾]$/,""));th.textContent+=asc?" ▴":" ▾";render()});
+document.querySelectorAll("#jobsView th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;asc=sortK===k?!asc:k!=="date_found"&&k!=="fit";sortK=k;
+ document.querySelectorAll("#jobsView th[data-k]").forEach(t=>t.textContent=t.textContent.replace(/ [▴▾]$/,""));th.textContent+=asc?" ▴":" ▾";render()});
 ["q","fstatus","fcat","fmin"].forEach(i=>document.getElementById(i).addEventListener("input",render));
 exp.onclick=()=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(st,null,2)],{type:"application/json"}));a.download="adeline-tracker-progress.json";a.click()};
-imp.onclick=()=>file.click();file.onchange=()=>{const f=file.files[0];if(!f)return;f.text().then(t=>{try{const o=JSON.parse(t);const pc=Object.assign({},st.__contacts,o.__contacts);Object.assign(st,o);st.__contacts=pc;save();render();if(people.length)prender();alert("Progress imported.")}catch(e){alert("That file isn't a valid export.")}})};
+imp.onclick=()=>file.click();file.onchange=()=>{const f=file.files[0];if(!f)return;f.text().then(t=>{try{const o=JSON.parse(t);const pc=Object.assign({},st.__contacts,o.__contacts);const ps=(st.__selfJobs||[]).concat(o.__selfJobs||[]);const seen=[];for(const s of ps){if(!seen.some(x=>x.id===s.id||sameJob(x,s)))seen.push(s)}Object.assign(st,o);st.__contacts=pc;st.__selfJobs=seen;save();fillCats();render();if(people.length)prender();alert("Progress imported.")}catch(e){alert("That file isn't a valid export.")}})};
 
 function hideJobs(b){if(b.dataset.unhide){S(b.dataset.unhide).hidden=false;save();render();return}
- const ids=b.dataset.hide?[b.dataset.hide]:jobs.filter(j=>j.company===b.dataset.hideco&&!jHidden(j.id)).map(j=>j.id);
+ const list=allJobs();
+ const ids=b.dataset.hide?[b.dataset.hide]:list.filter(j=>j.company===b.dataset.hideco&&!jHidden(j.id)).map(j=>j.id);
  if(b.dataset.hideco&&!confirm(`Hide all ${ids.length} job(s) currently listed from ${b.dataset.hideco}? New roles from them in future picks will still show up.`))return;
  const cks=people.filter(p=>p.jobs.some(i=>ids.includes(i))&&!pHidden(p.id)).map(p=>p.id);
  const alsoC=cks.length&&confirm(`Also hide the ${cks.length} related contact(s) on the Outreach / People tab? (Cancel = keep them)`);
  ids.forEach(i=>S(i).hidden=true);if(alsoC)cks.forEach(k=>P(k).hidden=true);save();render()}
 jhid.onclick=()=>{showHJ=!showHJ;open=null;render()};
+// ---- Add a job I applied to ----
+function todayISO(){const d=new Date();const z=d.getTimezoneOffset();const l=new Date(d.getTime()-z*60000);return l.toISOString().slice(0,10)}
+function slug(s){return String(s||"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40)}
+function newSelfId(company,role){let base="self-"+slug(company)+"-"+(slug(role)||"role"),id=base,n=2;const ids=new Set(allJobs().map(j=>j.id));while(ids.has(id)){id=base+"-"+n;n++}return id}
+function formJob(){return{company:ajCo.value.trim(),role:ajRole.value.trim(),url:ajUrl.value.trim(),location:ajLoc.value.trim(),date:ajDate.value,notes:ajNotes.value.trim()}}
+function showAdd(on){addModal.hidden=!on;ajErr.hidden=true;if(on){if(!ajDate.value)ajDate.value=todayISO();ajCo.focus()}}
+function validateAdd(f){if(!f.company||!f.role){ajErr.textContent="Company and role title are required.";ajErr.hidden=false;return false}return true}
+function findDup(f){return allJobs().find(j=>sameJob(j,{company:f.company,role:f.role,url:f.url}))}
+function addSelfJob(f){
+  const id=newSelfId(f.company,f.role);
+  const job={id,date_found:f.date||todayISO(),posted:"",section:"applied",company:f.company,role:f.role,location:f.location||"",salary:"",url:f.url||"",fit:null,category:"Added by you",summary:f.notes||"",fit_rationale:"",contacts:[],default_status:"Applied",added_by_you:true};
+  selfList().push(job);DEF[id]="Applied";S(id).status="Applied";if(f.notes)S(id).notes=f.notes;save();fillCats();render();return job;
+}
+function syncMailto(job){
+  const lines=["Please add this job I applied to on my own to the tracker:","","Company: "+job.company,"Role: "+job.role,"Link: "+(job.url||""),"Location: "+(job.location||""),"Date applied: "+(job.date_found||""),"Notes: "+(job.summary||S(job.id).notes||""),"","Thanks,","Adeline"];
+  const href="mailto:mb2568@georgetown.edu?subject="+encodeURIComponent("Tracker: add applied job")+"&body="+encodeURIComponent(lines.join("\n"));
+  window.location.href=href;
+}
+function saveFromForm(andSync){
+  const f=formJob();if(!validateAdd(f))return;
+  const dup=findDup(f);
+  if(dup){
+    if(andSync&&dup.added_by_you){syncMailto(dup);showAdd(false);return}
+    ajErr.textContent="That job is already on your tracker"+(dup.added_by_you?" (added by you)":"")+". It wasn't added again.";ajErr.hidden=false;return;
+  }
+  const job=addSelfJob(f);showAdd(false);if(andSync)syncMailto(job);
+}
+addJob.onclick=()=>showAdd(true);ajCancel.onclick=()=>showAdd(false);
+addModal.addEventListener("click",e=>{if(e.target===addModal)showAdd(false)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!addModal.hidden)showAdd(false)});
+ajSave.onclick=()=>saveFromForm(false);ajSync.onclick=()=>saveFromForm(true);
 // ---- Outreach / People tab ----
 const PSTAT=["Not contacted","Connection sent","Connected","Messaged","Chatted / call","Replied","Referral","No response","Not pursuing"];
 let people=[],psort="status",pasc=true;const PC=()=>st.__contacts||(st.__contacts={});
 const P=id=>PC()[id]||(PC()[id]={status:"Not contacted",touch:"",notes:""});
-const pHidden=id=>{const s=PC()[id];return !!s&&(s.hidden===true||(s.status==="Not pursuing"&&s.hidden!==false))};
+const pHidden=id=>{const s=PC()[id];if(s&&s.hidden===false)return false;if(s&&(s.hidden===true||(s.status==="Not pursuing"&&s.hidden!==false)))return true;const p=people.find(x=>x.id===id);return!!(p&&companyClosed(p.company))};
 const pkey=(c,j)=>(c.linkedin&&c.linkedin!=="unknown"?c.linkedin.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,"").toLowerCase():(c.name+"|"+j.company).toLowerCase());
-function buildPeople(){const m={};for(const j of jobs)for(const c of (j.contacts||[])){const k=pkey(c,j);
+function buildPeople(){const m={};for(const j of allJobs())for(const c of (j.contacts||[])){const k=pkey(c,j);
  if(!m[k])m[k]={id:k,name:c.name,title:c.title,company:j.company,roles:[],alum:!!c.georgetown_alum,linkedin:c.linkedin,email:c.email,date:j.date_found,jobs:[]};
  const p=m[k];p.jobs.push(j.id);if(!p.roles.includes(j.role))p.roles.push(j.role);if(c.georgetown_alum)p.alum=true;if((!p.email||p.email.startsWith("unknown"))&&c.email)p.email=c.email}
- people=Object.values(m);PSTAT.forEach(s=>pfstatus.add(new Option(s,s)));[...new Set(people.map(p=>p.company))].sort().forEach(c=>pfco.add(new Option(c,c)))}
+ people=Object.values(m);[...pfstatus.querySelectorAll("option")].forEach((o,i)=>{if(i)o.remove()});[...pfco.querySelectorAll("option")].forEach((o,i)=>{if(i)o.remove()});
+ PSTAT.forEach(s=>pfstatus.add(new Option(s,s)));[...new Set(people.map(p=>p.company))].sort().forEach(c=>pfco.add(new Option(c,c)))}
 function prender(){const q=pq.value.toLowerCase(),fs=pfstatus.value,fc=pfco.value,al=palum.checked;
  let L=people.filter(p=>(showHP?pHidden(p.id):!pHidden(p.id))&&(!q||[p.name,p.title,p.company,p.roles.join(" ")].join(" ").toLowerCase().includes(q))&&(!fs||P(p.id).status===fs)&&(!fc||p.company===fc)&&(!al||p.alum));
  const v=(p,k)=>k==="status"?PSTAT.indexOf(P(p.id).status):k==="touch"?P(p.id).touch:k==="alum"?(p.alum?0:1):k==="roles"?p.roles.join():String(p[k]||"").toLowerCase();
