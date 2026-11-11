@@ -33,13 +33,17 @@ footer{color:var(--gray);font-size:12px;margin:18px 0}
 .pin{padding:4px 6px;border:1px solid var(--line);border-radius:6px;font:inherit;width:100%}
 td a{color:#1a56b0;text-decoration:none}
 .hb{padding:3px 7px;font-size:12px;margin:3px 3px 0 0}.hidrow{opacity:.55}
-.modal-bg{position:fixed;inset:0;background:rgba(4,30,66,.45);display:flex;align-items:center;justify-content:center;z-index:40;padding:16px}
-.modal{background:#fff;border-radius:10px;padding:20px 22px;max-width:500px;width:100%;box-shadow:0 10px 36px rgba(0,0,0,.22);max-height:92vh;overflow:auto}
-.modal h2{margin:0 0 6px;font-size:18px}.modal .hint{color:var(--gray);font-size:12px;margin:0 0 10px}
+.modal-bg{position:fixed;inset:0;background:rgba(4,30,66,.45);display:none;align-items:center;justify-content:center;z-index:40;padding:16px}
+.modal-bg.is-open{display:flex}
+.modal-bg[hidden]{display:none!important}
+.modal{background:#fff;border-radius:10px;padding:20px 22px;max-width:500px;width:100%;box-shadow:0 10px 36px rgba(0,0,0,.22);max-height:92vh;overflow:auto;position:relative}
+.modal h2{margin:0 40px 6px 0;font-size:18px}.modal .hint{color:var(--gray);font-size:12px;margin:0 0 10px}
 .modal label{display:block;font-size:12px;font-weight:600;margin:8px 0 3px;color:#3b4252}
 .modal input,.modal textarea{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:6px;font:inherit;background:#fff}
 .modal textarea{min-height:70px}
 .modal .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;justify-content:flex-end}
+.modal .x{position:absolute;top:10px;right:10px;width:36px;height:36px;padding:0;border:none;background:transparent;color:var(--navy);font-size:24px;line-height:1;cursor:pointer;border-radius:6px}
+.modal .x:hover{background:#eef1f5}
 .err{color:#8a1f1f;font-size:12px;margin-top:8px}
 </style></head><body>
 <header><h1>Adeline's Job Tracker</h1><p>Daily picks, newest first. Click a row to open details and contacts. Jobs and the Outreach / People tab save your status and notes in this browser.</p></header>
@@ -67,8 +71,9 @@ td a{color:#1a56b0;text-decoration:none}
 </div>
 <footer>Each day's picks are added to <code>jobs.json</code>. Progress is stored in this browser's localStorage. Jobs you add yourself stay on this device until you use <b>Send to sync</b>, which emails them to be added permanently. Use Export to back up your progress or move it to another device.</footer>
 </div>
-<div id="addModal" class="modal-bg" hidden>
-<div class="modal" role="dialog" aria-labelledby="addTitle">
+<div id="addModal" class="modal-bg" hidden aria-hidden="true">
+<div class="modal" role="dialog" aria-modal="true" aria-labelledby="addTitle">
+<button type="button" class="x" id="ajClose" aria-label="Close">×</button>
 <h2 id="addTitle">Add a job I applied to</h2>
 <p class="hint">Saved on this device right away, and tagged “Added by you.” Use Send to sync so it can be added permanently to the shared tracker.</p>
 <label for="ajCo">Company *</label><input id="ajCo" autocomplete="organization">
@@ -174,7 +179,16 @@ function todayISO(){const d=new Date();const z=d.getTimezoneOffset();const l=new
 function slug(s){return String(s||"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40)}
 function newSelfId(company,role){let base="self-"+slug(company)+"-"+(slug(role)||"role"),id=base,n=2;const ids=new Set(allJobs().map(j=>j.id));while(ids.has(id)){id=base+"-"+n;n++}return id}
 function formJob(){return{company:ajCo.value.trim(),role:ajRole.value.trim(),url:ajUrl.value.trim(),location:ajLoc.value.trim(),date:ajDate.value,notes:ajNotes.value.trim()}}
-function showAdd(on){addModal.hidden=!on;ajErr.hidden=true;if(on){if(!ajDate.value)ajDate.value=todayISO();ajCo.focus()}}
+function addFormOpen(){return addModal.classList.contains("is-open")&&!addModal.hidden}
+function resetAddForm(){ajCo.value="";ajRole.value="";ajUrl.value="";ajLoc.value="";ajNotes.value="";ajDate.value="";ajErr.textContent="";ajErr.hidden=true}
+function showAdd(on){
+  if(on){
+    addModal.hidden=false;addModal.classList.add("is-open");addModal.setAttribute("aria-hidden","false");
+    ajErr.hidden=true;if(!ajDate.value)ajDate.value=todayISO();ajCo.focus();
+  }else{
+    addModal.classList.remove("is-open");addModal.hidden=true;addModal.setAttribute("aria-hidden","true");resetAddForm();
+  }
+}
 function validateAdd(f){if(!f.company||!f.role){ajErr.textContent="Company and role title are required.";ajErr.hidden=false;return false}return true}
 function findDup(f){return allJobs().find(j=>sameJob(j,{company:f.company,role:f.role,url:f.url}))}
 function addSelfJob(f){
@@ -196,10 +210,13 @@ function saveFromForm(andSync){
   }
   const job=addSelfJob(f);showAdd(false);if(andSync)syncMailto(job);
 }
-addJob.onclick=()=>showAdd(true);ajCancel.onclick=()=>showAdd(false);
-addModal.addEventListener("click",e=>{if(e.target===addModal)showAdd(false)});
-document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!addModal.hidden)showAdd(false)});
-ajSave.onclick=()=>saveFromForm(false);ajSync.onclick=()=>saveFromForm(true);
+function closeAdd(e){if(e){e.preventDefault();e.stopPropagation()}showAdd(false)}
+addJob.onclick=()=>showAdd(true);
+ajCancel.onclick=closeAdd;ajClose.onclick=closeAdd;
+addModal.addEventListener("click",e=>{if(e.target===addModal)closeAdd(e)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&addFormOpen())closeAdd(e)});
+ajSave.onclick=e=>{e.preventDefault();saveFromForm(false)};
+ajSync.onclick=e=>{e.preventDefault();saveFromForm(true)};
 // ---- Outreach / People tab ----
 const PSTAT=["Not contacted","Connection sent","Connected","Messaged","Chatted / call","Replied","Referral","No response","Not pursuing"];
 let people=[],psort="status",pasc=true;const PC=()=>st.__contacts||(st.__contacts={});
