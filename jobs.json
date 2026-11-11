@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "jobs": [
   {
    "id": "jagreen-natsec-research-associate",
@@ -2415,6 +2415,49 @@
    ],
    "cover_letter": "letters/Adeline_Bean_Cover_Letter_Ramp.pdf",
    "resume": "resumes/ramp-legal-privacy-ops-associate-nyc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "astranis-regulatory-policy-analyst-dc",
+   "date_found": "2026-11-11",
+   "posted": "2026-11-10",
+   "section": "picks",
+   "company": "Astranis",
+   "role": "Regulatory Policy Analyst",
+   "location": "Washington, DC",
+   "salary": "$90,000–$120,000 + equity",
+   "url": "https://job-boards.greenhouse.io/astranis/jobs/4728716006",
+   "fit": 7,
+   "category": "Space-tech startup regulatory policy (FCC/ITU satellite licensing; defense-adjacent)",
+   "summary": "Astranis is a venture-backed satellite startup ($1.2B+ raised, five satellites on orbit, $1B+ contract backlog) that builds small geostationary satellites for enterprises, sovereign governments and the US military. Its Regulatory Team is hiring a Regulatory Policy Analyst in DC. The analyst researches complex FCC regulatory constructs, prepares and tracks satellite and earth station license applications until they're granted, writes comments to persuade government officials, learns space regimes like ITU orbital-slot filings and the FCC's two-degree spacing rules, and works with spectrum engineers and the team's attorneys. It asks for 2+ years in a fast-paced career (FCC or spectrum experience preferred) and a BA; a JD is a bonus but optional, and the posting says \"Don't meet all these requirements? Apply anyways.\" Export rules require US citizenship, permanent residency or refugee/asylee status. Posted Nov 10 on Astranis's Greenhouse board.",
+   "fit_rationale": "A startup regulatory-policy job in DC with pay well above target, which is exactly the GR/regulatory-at-a-startup profile we're prioritizing. Her H&K regulatory research and memo writing, and her support for the National Security & Defense sector group co-leads, map directly onto researching FCC rules and writing persuasive comments; House casework shows follow-through with federal agencies. The gaps are the 2+ years and no spectrum/FCC background, so the letter leans on learning technical regimes from first principles. It's also a strong pre-law path. Counts as today's defense-adjacent pick (Astranis serves the US military).",
+   "contacts": [
+    {
+     "name": "Kimberly Baum",
+     "title": "Head of Regulatory, Astranis (Washington, DC area)",
+     "linkedin": "https://linkedin.com/in/kimberly-baum-016a54177",
+     "email": "unknown",
+     "note": "She has led Astranis's regulatory and spectrum work since Apr 2025, after regulatory and spectrum roles at the FCC, SES, Motorola and OneWeb, and she's Vice-Chair of the FCC's WRC-27 Advisory Committee. This role almost certainly reports to her. Apply first, then send a short note about why satellite licensing interests you.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Kailey Lauter",
+     "title": "Regulatory Associate, Astranis (Washington, DC)",
+     "linkedin": "https://linkedin.com/in/kailey-lauter-551870177",
+     "email": "unknown",
+     "note": "She joined Astranis's DC regulatory team in Nov 2025 (University of Maryland undergrad, Colorado Law JD). She's the closest peer to this role and can tell you what the day-to-day work and team are like. Ask for a 15-minute chat.",
+     "georgetown_alum": false
+    },
+    {
+     "name": "Priscilla Delgado Argeris",
+     "title": "Regulatory Lead, Market Access, Astranis (Washington, DC)",
+     "linkedin": "https://linkedin.com/in/priscilla-delgado-argeris-961a372a",
+     "email": "unknown",
+     "note": "She joined Astranis in Aug 2026 after about 7 years on spectrum policy at Meta (Princeton SPIA BA). She's a policy person, not an engineer, so she's a good person to ask how a non-technical hire ramps up on spectrum regulation.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Astranis.pdf",
+   "resume": "resumes/astranis-regulatory-policy-analyst-dc/AdelineBean_Resume.pdf"
   }
  ],
  "previously_sent_removed": [
