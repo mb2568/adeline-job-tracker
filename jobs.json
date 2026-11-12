@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "company_status": {},
  "jobs": [
   {
@@ -2459,6 +2459,40 @@
    ],
    "cover_letter": "letters/Adeline_Bean_Cover_Letter_Astranis.pdf",
    "resume": "resumes/astranis-regulatory-policy-analyst-dc/AdelineBean_Resume.pdf"
+  },
+  {
+   "id": "nationalgrid-gdp-transmission-bizdev-waltham",
+   "date_found": "2026-11-12",
+   "posted": "2026-11-06",
+   "section": "picks",
+   "company": "National Grid",
+   "role": "Graduate Development Program, Associate Business Analyst, Business Development (Transmission)",
+   "location": "Waltham, MA (Boston area)",
+   "salary": "$69,000–$82,000",
+   "url": "https://jobs-ats.nationalgrid.com/job/Waltham-Graduate-Development-Program%2C-Associate-Business-Analyst%2C-Business-Development-MA-02451/1448532300/",
+   "fit": 8,
+   "category": "Energy utility transmission policy & regulatory (new-grad program)",
+   "summary": "National Grid, the electric and gas utility serving Massachusetts and New York, is hiring May 2026–June 2027 graduates into its year-long Graduate Development Program (start June 7 or July 12, 2027). This Associate Business Analyst sits on the New England Transmission Business Development team: helping develop transmission policy and wholesale-market positions, researching and preparing materials for New England policymakers, government officials and regulators, engaging stakeholders including ISO-NE and FERC on regional transmission planning, helping prepare FERC and state regulatory filings, supporting competitive transmission RFP bids, and representing National Grid at external meetings (mainly MA, NH and VT). Preferred majors include Public Policy, Government and Energy/Environmental Policy. Requires a valid driver's license and US work authorization without sponsorship. Applications close Dec 1, 2026. Posted Nov 6.",
+   "fit_rationale": "A truly entry-level, 2027-grad program that is squarely energy policy plus government/regulatory engagement, in the Boston area, with the range topping out above $75k. Her H&K regulatory and legislative research and House office experience map directly onto preparing materials for policymakers and regulators, and the program's structure and mentorship suit someone new to transmission. Main gap: no energy or utility internship, and the range starts below $75k.",
+   "contacts": [],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_National_Grid.pdf"
+  },
+  {
+   "id": "invenergy-analyst-development-denver",
+   "date_found": "2026-11-12",
+   "posted": "2026-11-02",
+   "section": "picks",
+   "company": "Invenergy",
+   "role": "Analyst, Development",
+   "location": "Denver, CO (hybrid, Mon–Thu in office)",
+   "salary": "$70,000–$85,000 + 15% annual bonus",
+   "url": "https://invenergyllc.wd1.myworkdayjobs.com/invenergyllc/job/Denver-CO/Analyst--Development_R11406",
+   "fit": 6,
+   "category": "Energy developer project development (permitting & stakeholder engagement)",
+   "summary": "Invenergy, North America's largest privately held developer, owner and operator of power infrastructure (Chicago HQ), is hiring an Analyst on its Denver development team working on utility-scale wind (and solar) projects. The analyst advances projects in the region: market assessments and fatal-flaw screening, site reconnaissance, securing site control through landowner leases and easements, coordinating landowner communications, taking a lead role on certain local, state and federal permits, representing Invenergy with customers, landowners, state and local officials and other stakeholders, tracking power-market trends, and supporting interconnection, budgets and schedules. Minimum: bachelor's degree and 0–2 years in clean energy or relevant experience; engineering/business degrees preferred. Valid driver's license and US work authorization without sponsorship required. Posted Nov 2.",
+   "fit_rationale": "Entry-level (0–2 years) energy job in Denver with base pay reaching $85k plus a 15% bonus. The permitting, government-official and community-stakeholder side of development matches her House casework, H&K regulatory research and IRC coordination work. Gaps: no energy industry experience, it prefers engineering/business degrees, and the role has commercial pieces (pricing, leases). She'd be selling herself as the permitting and stakeholder person who learns the technical side on the job. Invenergy was in an earlier report (Regional Communications Analyst in Chicago), so this is a second option at the same company.",
+   "contacts": [],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Invenergy.pdf"
   }
  ],
  "previously_sent_removed": [
