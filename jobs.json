@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "company_status": {},
  "jobs": [
   {
@@ -2493,6 +2493,66 @@
    "fit_rationale": "Entry-level (0–2 years) energy job in Denver with base pay reaching $85k plus a 15% bonus. The permitting, government-official and community-stakeholder side of development matches her House casework, H&K regulatory research and IRC coordination work. Gaps: no energy industry experience, it prefers engineering/business degrees, and the role has commercial pieces (pricing, leases). She'd be selling herself as the permitting and stakeholder person who learns the technical side on the job. Invenergy was in an earlier report (Regional Communications Analyst in Chicago), so this is a second option at the same company.",
    "contacts": [],
    "cover_letter": "letters/Adeline_Bean_Cover_Letter_Invenergy.pdf"
+  },
+  {
+   "id": "raymondjames-research-associate-washington-policy",
+   "date_found": "2026-11-13",
+   "posted": "2026-11-11",
+   "section": "picks",
+   "company": "Raymond James",
+   "role": "Research Associate - Washington Policy",
+   "location": "Arlington, VA (DC area; in office)",
+   "salary": "$80,000–$90,000",
+   "url": "https://raymondjames.wd1.myworkdayjobs.com/RaymondJamesCareers/job/VA---Arlington---1550-Crystal-Dr-Ste-505/Research-Associate_R-0013797",
+   "fit": 7,
+   "category": "Policy research for financial markets (Washington policy analysis)",
+   "summary": "Raymond James's Washington Policy team (part of its equity research group in Capital Markets) is hiring a Research Associate in Arlington, VA to support a Senior Policy Analyst. The role researches regulations, legislative proposals, and geopolitical/macroeconomic developments and writes reports on how likely policy changes are and what they would mean for the economy and equity markets. This seat focuses on macro policy: geopolitics, defense, trade, supply chains and energy (the team covers everything except healthcare). The role explicitly does not lobby; it is about dispassionate analysis. Asks for 1–3 years of public policy experience (executive branch, Hill, industry or trade associations), strong writing, and a policy-related bachelor's; must get the SIE license within 3 months and Series 63/86/87 within 12 months. Posted Nov 11.",
+   "fit_rationale": "This is policy analysis in its purest form, focused on defense, trade and energy, the areas she has tracked at H&K (National Security & Defense sector group) and in Rep. DeGette's office. Her Hill and H&K internships are the kind of 'legislative branch / industry' experience the posting lists. Pay clears $75k. Gaps: it asks for 1–3 years (her experience is internships), she has no markets background, and she'd need to pass securities licensing exams (the firm sponsors them). Written as an analytical, nonpartisan researcher.",
+   "contacts": [
+    {
+     "name": "Ed Mills",
+     "title": "Managing Director, Washington Policy Analyst, Raymond James",
+     "linkedin": "https://linkedin.com/in/edward-mills-63135819",
+     "email": "unknown",
+     "note": "Leads Raymond James's Washington policy research (public bio). Not a confirmed Georgetown alum. A short, respectful LinkedIn note after applying is fine.",
+     "georgetown_alum": false
+    }
+   ],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_Raymond_James.pdf"
+  },
+  {
+   "id": "sixam-analyst-public-affairs-arlington",
+   "date_found": "2026-11-13",
+   "posted": "2026-11-04",
+   "section": "picks",
+   "company": "SixAM Strategies",
+   "role": "Analyst, Public Affairs",
+   "location": "Arlington, VA (DC area)",
+   "salary": "Not listed",
+   "url": "https://careers-targetedvictory.icims.com/jobs/8421/analyst%2c-public-affairs/job",
+   "fit": 7,
+   "category": "Public affairs / government affairs firm (entry level)",
+   "summary": "SixAM Strategies, a bipartisan public affairs firm with a hyperlocal, community-storytelling approach for corporations, trade associations and causes, is hiring an Analyst in Arlington, VA (posting hosted on Targeted Victory's careers site). The analyst supports reputation-management and media strategy for corporate clients: managing grassroots field teams, drafting press releases, talking points, statements and op-eds, media monitoring and clipping, media outreach to local/regional/national outlets, research on client issues, legislative trends and media landscapes, client presentations and campaign reports, and day-to-day project management. Requires 0–2 years in public affairs, advocacy or communications. Salary not listed. Listed on LinkedIn around Nov 4.",
+   "fit_rationale": "Truly entry-level (0–2 years) public affairs job in the DC area that mixes legislative-trend research with stakeholder and media work. Her H&K talking points and briefing materials, House casework, NEFE advocacy work and credit-union outreach content map well onto it. Gaps: it leans communications/media relations more than pure policy, and the salary isn't listed. A good way into DC public affairs.",
+   "contacts": [],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_SixAM_Strategies.pdf"
+  },
+  {
+   "id": "cnas-ai-policy-associate-compute",
+   "date_found": "2026-11-13",
+   "posted": "2026-11-09",
+   "section": "picks",
+   "company": "Center for a New American Security (CNAS)",
+   "role": "AI Policy Associate (Compute), Technology and National Security Program",
+   "location": "Washington, DC (in person)",
+   "salary": "$70,000–$165,000 (associate level at the lower end)",
+   "url": "https://cnas.bamboohr.com/careers/143",
+   "fit": 6,
+   "category": "National security / AI policy think tank (defense-adjacent)",
+   "summary": "CNAS, the bipartisan national security think tank, is hiring an AI Policy Associate (or, for 2–3+ years' experience, an AI Policy Researcher) in its Technology and National Security Program and AI Policy Lab. The associate works with a senior fellow on how computing power (AI chips, data centers, cloud, chip supply chains, export controls) can be monitored and governed for U.S. national security: research and policy memos, briefings for executive-branch and Hill officials, tracking technical and legislative developments, plus organizing workshops, briefings and events. Associate level requires a bachelor's; technical background is preferred but not required (a 'track record of quickly mastering technical subject matter' counts). Three-year term appointment, full-time in DC. Posted Nov 9.",
+   "fit_rationale": "Today's one defense/national-security pick: a real entry-level think-tank job at the center of AI and national security policy, using her H&K National Security & Defense tracking and her House research on technology and defense bills. Gaps: it's technical (chips, compute, export controls), they prefer a quantitative or CS background, the associate pay likely sits near the $70k bottom of the range, and it's a 3-year term. Worth a shot because CNAS is a top national-security employer.",
+   "contacts": [],
+   "cover_letter": "letters/Adeline_Bean_Cover_Letter_CNAS.pdf"
   }
  ],
  "previously_sent_removed": [
